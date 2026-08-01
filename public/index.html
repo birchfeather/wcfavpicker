@@ -42,11 +42,6 @@ a:link, a:visited {
 a:active, a:hover {
     color:var(--accent-color);
 }
-
-.help-text {
-    display:block;
-    font-size:smaller;
-}
  
 .info {
     font-weight:bold;
@@ -134,16 +129,6 @@ button.disabled:hover {
 
 #expand-favorites {
     display:none;
-}
-
-fieldset {
-    border:1px solid #CCC;
-    padding:0 1em;
-    margin-bottom:1em;
-}
-
-legend {
-    font-weight:bold;
 }
 
 @media (min-width:360px) {
@@ -522,6 +507,94 @@ button.disabled:hover {
             <b>Modern SkyClan Books</b> include Firestar's Quest, SkyClan's Destiny, Hawkwing's Journey alongside any other books that take place after modern SkyClan is rebuilt.<br>
         </p>
         <p>
+    <table style="width:65%">
+    <tr>
+        <td>
+            <label>
+                <input type="checkbox" name="roles" class="roles" value="dotc">Dawn of the Clans
+            </label>
+        </td>
+
+        <td>
+            <label>
+                <input type="checkbox" name="roles" class="roles" value="preq">Prequels
+            </label>
+        </td>
+
+        <td>
+            <label>
+                <input type="checkbox" name="roles" class="roles" value="tpb">The Prophecies Begin
+            </label>
+        </td>
+
+        <td>
+            <label>
+                <input type="checkbox" name="roles" class="roles" value="tnp">The New Prophecy
+            </label>
+        </td>
+
+        <td>
+            <label>
+                <input type="checkbox" name="roles" class="roles" value="pot">Power of Three
+            </label>
+        </td>
+    </tr>
+
+    <tr>
+
+        <td>
+            <label>
+                <input type="checkbox" name="roles" class="roles" value="oots">Omen of the Stars
+            </label>
+        </td>
+
+        <td>
+            <label>
+                <input type="checkbox" name="roles" class="roles" value="avos">A Vision of Shadows
+            </label>
+        </td>
+
+        <td>
+            <label>
+                <input type="checkbox" name="roles" class="roles" value="tbc">The Broken Code
+            </label>
+        </td>
+
+        <td>
+            <label>
+                <input type="checkbox" name="roles" class="roles" value="asc">A Starless Clan
+            </label>
+        </td>
+
+        <td>
+            <label>
+                <input type="checkbox" name="roles" class="roles" value="cs">Changing skies
+            </label>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            <label>
+                <input type="checkbox" name="roles" class="roles" value="fg">Field Guides
+            </label>
+        </td>
+
+        <td>
+            <label>
+                <input type="checkbox" name="roles" class="roles" value="skc">Modern SkyClan Books
+            </label>
+        </td>
+
+        <td>
+            <label>
+                <input type="checkbox" name="roles" class="roles" value="nre">New Releases
+            </label>
+        </td>
+    </tr>
+</table>
+        </p>
+        <p>
         Feel free to include and exclude any of the options based on what you have or haven't read or if a certain era of characters just doesn't appeal to you. And, if you are looking to avoid spoilers of recent books regarding any new character and/or name changes, I highly recommend not selecting the 'New Releases' option. Unselecting this will remove any characters who have been introduced or had their name changed in books that have released in the past 3 months! Although it is worth mentioning that I tend to update the picker quite soon after any book releases but any spoilers will be located within this category.
         <b>No books are currently listed here</b>.
         </p>
@@ -534,7 +607,7 @@ button.disabled:hover {
             <a href="https://eggfeather.tumblr.com/">esoteric-terror</a>!
         </p>
         <p>
-            Original source & sidebar code by <a href="https://github.com/antialiasis/favorite-picker">antialiasis</a> as well as being inspired by the older Warriors favourite picker created by <a href="https://x.com/memorydata">memorydata</a>!
+            Original source code by <a href="https://twitter.com/antialiasis">antialiasis</a> as well as being inspired by the older Warriors favourite picker created by <a href="https://x.com/memorydata">memorydata</a>!
         </p>
 
         <p>
@@ -567,133 +640,10 @@ button.disabled:hover {
             </div>
              
             <div id="secondary">
-<ul class="tabs">
-<li id="expand-favorites"><a href="#" title="Expand list">&lsaquo;</a></li><li><a href="#found-favorites">Found Favorites</a></li><li><a href="#options">Options</a></li>
-</ul>
-
-<div id="found-favorites">
-<ol id="favorites" class="item-list">
-</ol>
-
-<div id="options">
-<fieldset>
-<legend>Display Options</legend>
-
-<p><label>Maximum Batch Size: <input type="number" id="max-batch-size" value="20" min="2" max="20" step="1"></label>
-<span class="help-text">The maximum number of characters shown in each batch given to you. When there are less characters left in a batch to be eliminated, you'll see fewer than this. Reducing the maximum batch size may make it easier to pick, but it will also take longer to get through each round.</span></p>
-</fieldset>
-
-<fieldset>
-<legend>Character Filters</legend>
-
-<p>Include Series:
-    <label>
-        (<input type="checkbox" id="series-all" class="select-all" value="series"> Select All)
-    </label><br>
-
-    <label>
-        <input type="checkbox" class="series" value="regular" checked> Dawn of the Clans,
-    </label>
-
-    <label>
-        <input type="checkbox" class="series" value="regular" checked> Prequels Era,
-    </label>
-
-    <label>
-        <input type="checkbox" class="series" value="regular" checked> The Prophecies Begin,
-    </label>
-
-    <label>
-        <input type="checkbox" class="series" value="regular" checked> The New Prophecy,
-    </label>
-
-    <label>
-        <input type="checkbox" class="series" value="regular" checked> Power of Three,
-    </label>
-
-    <label>
-        <input type="checkbox" class="series" value="regular" checked> Omen of the Stars,
-    </label>
-
-    <label>
-        <input type="checkbox" class="series" value="regular" checked> A Vision of Shadows,
-    </label>
-
-    <label>
-        <input type="checkbox" class="series" value="regular" checked> The Broken Code,
-    </label>
-
-    <label>
-        <input type="checkbox" class="series" value="regular" checked> A Starless Clan,
-    </label>
-
-    <label>
-        <input type="checkbox" class="series" value="regular" checked> Changing Skies,
-    </label>
-
-    <label>
-        <input type="checkbox" class="series" value="regular" checked> Field Guides,
-    </label>
-
-    <label>
-        <input type="checkbox" class="series" value="regular" checked> Modern SkyClan Books
-    </label><br>
-
-    <span class="help-text">If a series is unchecked, no characters who were introduced in that series will appear.</span></p>
-
-<p>Include Groups:
-    <label>
-        (<input type="checkbox" id="groups-all" class="select-all" value="groups"> Select All)
-    </label><br>
-
-    <label>
-        <input type="checkbox" class="series" value="regular" checked> ThunderClan,
-    </label>
-
-    <label>
-        <input type="checkbox" class="series" value="regular" checked> ShadowClan,
-    </label>
-
-    <label>
-        <input type="checkbox" class="series" value="regular" checked> RiverClan,
-    </label>
-
-    <label>
-        <input type="checkbox" class="series" value="regular" checked> WindClan,
-    </label>
-
-    <label>
-        <input type="checkbox" class="series" value="regular" checked> SkyClan,
-    </label>
-
-    <label>
-        <input type="checkbox" class="series" value="regular" checked> Clanless,
-    </label>
-
-    <label>
-        <input type="checkbox" class="series" value="regular" checked> Other Groups,
-    </label>
-
-    <label>
-        <input type="checkbox" class="series" value="regular" checked> Afterlives,
-    </label>
-
-    <label>
-        <input type="checkbox" class="series" value="regular" checked> The Ancient Clans
-    </label><br>
-
-    <span class="help-text">If a group is unchecked, no characters who reside in that group will appear.</span></p>
-
-<p>
-    <label>
-        <input type="checkbox" class="spoilers" value="spoilers" checked> Include Spoilers
-    </label><br>
-    
-    <span class="help-text">If unchecked, characters who were introduced or had their name changed in books released in the last 3 months will not appear.</span></p>
-</fieldset>
-</div>
-</div>
-</div>
+            <h2>Found Favorites</h2>
+             
+            <ol id="favorites" class="item-list">
+            </ol>
             </div>
             </div>
             <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
@@ -708,155 +658,132 @@ button.disabled:hover {
                     id: "clearskydotc",
                     name: "Clear Sky",
                     image: "../thumbnails/CLEARSKY.png?v=2",
-                    series: "dotc",
-                    groups: "skc",
+                    role: "dotc",
                     recurring: true
                 }, {
                     id: "graywingdotc",
                     name: "Gray Wing (DotC)",
                     image: "../thumbnails/GRAYWING.png?v=2",
-                    series: "dotc",
-                    groups: "wc",
+                    role: "dotc",
                     recurring: true
                 }, {
                     id: "turtletaildotc",
                     name: "Turtle Tail",
                     image: "../thumbnails/TURTLETAIL.png?v=2",
-                    series: "dotc",
-                    groups: "wc",
+                    role: "dotc",
                     recurring: true
                 }, {
                     id: "tallshadowdotc",
                     name: "Tall Shadow",
                     image: "../thumbnails/TALLSHADOW.png?v=2",
-                    series: "dotc",
-                    groups: "shc",
+                    role: "dotc",
                     recurring: true
                 }, {
                     id: "moonshadowdotc",
                     name: "Moon Shadow",
                     image: "../thumbnails/MOONSHADOW.png?v=2",
-                    series: "dotc",
-                    groups: "skc",
+                    role: "dotc",
                     recurring: true
                 }, {
                     id: "jaggedpeakdotc",
                     name: "Jagged Peak",
                     image: "../thumbnails/JAGGEDPEAK.png?v=2",
-                    series: "dotc",
-                    groups: "wc",
+                    role: "dotc",
                     recurring: true
                 }, {
                     id: "shadedmossdotc",
                     name: "Shaded Moss",
                     image: "../thumbnails/SHADEDMOSS.png?v=2",
-                    series: "dotc",
-                    groups: "clanless",
+                    role: "dotc",
                     recurring: true
                 }, {
                     id: "rainsweptflowerdotc",
                     name: "Rainswept Flower",
                     image: "https://i.postimg.cc/4xXhZhMx/RAINSWEPT.png?v=2",
-                    series: "dotc",
-                    groups: "clanless",
                     recurring: true
                 }, {
                     id: "thunderdotc",
                     name: "Thunder",
                     image: "../thumbnails/THUNDER.png?v=2",
-                    series: "dotc",
-                    groups: "tc",
+                    role: "dotc",
                     recurring: true
                 }, {
                     id: "riverripledotc",
                     name: "River Ripple",
                     image: "../thumbnails/RIVERRIPPLE.png?v=2",
-                    series: "rc",
-                    groups: "skc",
+                    role: "dotc",
                     recurring: true
                 }, {
                     id: "windrunnerdotc",
                     name: "Wind Runner",
                     image: "../thumbnails/WINDRUNNER.png?v=2",
-                    series: "wc",
-                    groups: "skc",
+                    role: "dotc",
                     recurring: true
                 }, {
                     id: "gorsefurdotc",
                     name: "Gorse Fur",
                     image: "../thumbnails/GORSEFUR.png?v=2",
-                    series: "wc",
-                    groups: "skc",
+                    role: "dotc",
                     recurring: true
                 }, {
                     id: "stormdotc",
                     name: "Storm (Ro)",
                     image: "../thumbnails/STORMRO.png?v=2",
-                    series: "clanless",
-                    groups: "skc",
+                    role: "dotc",
                     recurring: true
                 }, {
                     id: "bumbledotc",
                     name: "Bumble",
                     image: "../thumbnails/BUMBLE.png?v=2",
-                    series: "dotc",
-                    groups: "clanless",
+                    role: "dotc",
                     recurring: true
                 }, {
                     id: "brightstreamdotc",
                     name: "Bright Stream",
                     image: "../thumbnails/BRIGHTSTREAM.png?v=2",
-                    series: "dotc",
-                    groups: "clanless",
+                    role: "dotc",
                     recurring: true
                 }, {
                     id: "jackdawscrydotc",
                     name: "Jackdaw\'s Cry",
                     image: "../thumbnails/JACKDAWSCRY.png?v=2",
-                    series: "dotc",
-                    groups: "clanless",
+                    role: "dotc",
                     recurring: true
                 }, {
                     id: "fallingfeatherdotc",
                     name: "Falling Feather",
                     image: "../thumbnails/FALLINGFEATHER.png?v=2",
-                    series: "dotc",
-                    groups: "skc",
+                    role: "dotc",
                     recurring: true
                 }, {
                     id: "lightningtaildotc",
                     name: "Lightning Tail",
                     image: "../thumbnails/LIGHTNINGTAIL.png?v=2",
-                    series: "dotc",
-                    groups: "tc",
+                    role: "dotc",
                     recurring: true
                 }, {
                     id: "acornfurdotc",
                     name: "Acorn Fur",
                     image: "../thumbnails/ACORNFUR.png?v=2",
-                    series: "dotc",
-                    groups: "skc",
+                    role: "dotc",
                     recurring: true
                 }, {
                     id: "hawkswoopdotc",
                     name: "Hawk Swoop",
                     image: "../thumbnails/HAWKSWOOP.png?v=2",
-                    series: "dotc",
-                    groups: "clanless",
+                    role: "dotc",
                     recurring: true
                 }, {
                     id: "frostdotc",
                     name: "Frost",
                     image: "../thumbnails/FROST.png?v=2",
-                    series: "dotc",
-                    groups: "skc",
+                    role: "dotc",
                     recurring: true
                 }, {
                     id: "quietraindotc",
                     name: "Quiet Rain",
                     image: "../thumbnails/QUIETRAIN.png?v=2",
-                    series: "dotc",
-                    groups: "other",
+                    role: "dotc",
                     recurring: true
                 }, {
                     id: "flutteringbirddotc",
@@ -9993,17 +9920,16 @@ button.disabled:hover {
     items: items,
     localStorageKey: 'picker-state',
     defaultSettings: {
-        series: ['dotc', 'preq', 'tpb', 'tnp', 'pot', 'oots', 'avos', 'tbc', 'asc', 'cs', 'fg', 'modskc'],
-        groups: ['tc', 'sc', 'rc', 'wc', 'skc', 'clanless', 'other', 'afterlives', 'ancient'],
+        minBatchSize: 2,
+        maxBatchSize: 20,
+        roles: ['dotc', 'fg', 'preq', 'tpb', 'tnp', 'pot', 'oots', 'skc', 'avos', 'tbc', 'asc', 'cs', 'cs'],
         recurringOnly: true
     },
     shouldIncludeItem: function(item, settings) {
         // Include only if:
-        // 1. the character's series is one of the series we have checked,
-        // 2. the character's affiliation is one we have checked,
-        // 3. the character's spoiler is one of the spoiler we have checked,
-        // 4. we haven't checked the "recurring only" box, or the character is a recurring character.
-        return settings.series.indexOf(item.series) !== -1 && settings.groups.indexOf(item.affiliation) !== -1 && settings.spoilers.indexOf(item.spoilers) !== -1 && (!settings.recurringOnly || item.recurring);
+        // 1. the character's role is in the list of roles we've, and
+        // 2. we haven't the "recurring only" box, or the character is a recurring character.
+        return settings.roles.indexOf(item.role) !== -1 && (!settings.recurringOnly || item.recurring);
     }
 });
  
@@ -10041,16 +9967,6 @@ var pickerUI = new PickerUI(myPicker, {
        }
 });
 pickerUI.initialize();
-    pickerUI.elem.settings.series.on('change', function() {
-        setSelectAll('series');
-    });
-
-    pickerUI.elem.settings.groups.on('change', function() {
-        setSelectAll('groups');
-    });
-
-    setSelectAll('series');
-    setSelectAll('groups');
  
 /* Sortable favorites - you can safely remove this, and the Sortable.min.js script, if you don't want to be able to sort your favorite list. */
 var sortable = new Sortable(pickerUI.elem.favorites.get(0), {
@@ -10070,48 +9986,6 @@ var sortable = new Sortable(pickerUI.elem.favorites.get(0), {
     }
 });
 /* End sortable favorites */
-
-function setSelectAll(setting) {
-    var value = pickerUI.getSetting(setting);
-    var $selectAll = $('.select-all[value="' + setting + '"]');
-    if (value.length === lists[setting].length) {
-        $selectAll.prop("checked", true);
-    } else {
-        $selectAll.prop("checked", false);
-    }
-}
-
-$(".select-all").on('change', function() {
-    var setting = $(this).val();
-    pickerUI.setSetting(setting, $(this).prop("checked") ? lists[setting] : []);
-    myPicker.setSettings(pickerUI.getSettings());
-    pickerUI.update(true, 'setting');
-});
-
-$(".toggle").on('click', function() {
-    $($(this).attr("href")).slideToggle();
-    return false;
-});
-
-$(".tabs").each(function() {
-    var $tabs = $(this);
-    $tabs.find("a:not(#expand-favorites a)").on('click', function() {
-        $($tabs.children(".active").removeClass("active").children("a").attr("href")).hide();
-        $(this).parent().addClass("active");
-        $($(this).attr("href")).show();
-        return false;
-    }).each(function () {
-        $($(this).attr("href")).hide();
-    }).first().click();
-});
-
-$("#expand-favorites a").on('click', function() {
-    $(this).html($("#secondary").hasClass("expanded") ? "&lsaquo;" : "&rsaquo;");
-    $(this).attr("title", $("#secondary").hasClass("expanded") ? "Expand list" : "Show picker");
-    $("#picking").toggleClass("collapsed");
-    $("#secondary").toggleClass("expanded");
-    return false;
-});
 
 let darkmode = localStorage.getItem('darkmode')
 const themetoggle = document.getElementById('themetoggle')
