@@ -832,7 +832,7 @@
 
                         <p>
                             <label>
-                                <input type="checkbox" class="spoilers" value="true" checked> Include Spoilers
+                                <input type="checkbox" class="spoilers" value="spoilers" checked> Include Spoilers
                             </label><br>
 
                             <span class="help-text">If unchecked, characters who were introduced or had their name changed in books
@@ -12002,7 +12002,6 @@
                 image: "../thumbnails/hank.png?v=2",
                 series: "cs",
                 groups: "clanless",
-                spoilers: "true",
                 recurring: true
             }, {
                 id: "jackcs",
@@ -12010,7 +12009,6 @@
                 image: "../thumbnails/jacklo.png?v=2",
                 series: "cs",
                 groups: "clanless",
-                spoilers: "true",
                 recurring: true
             }, {
                 id: "pearlcs",
@@ -12018,7 +12016,6 @@
                 image: "../thumbnails/pearl.png?v=2",
                 series: "cs",
                 groups: "clanless",
-                spoilers: "true",
                 recurring: true
             }, {
                 id: "penelopecs",
@@ -12026,7 +12023,6 @@
                 image: "../thumbnails/penelope.png?v=2",
                 series: "cs",
                 groups: "clanless",
-                spoilers: "true",
                 recurring: true
             }, {
                 id: "foamcs",
@@ -12034,7 +12030,6 @@
                 image: "../thumbnails/foam.png?v=2",
                 series: "cs",
                 groups: "clanless",
-                spoilers: "true",
                 recurring: true
             }, {
                 id: "pinkycs",
@@ -12042,7 +12037,6 @@
                 image: "../thumbnails/pinky.png?v=2",
                 series: "cs",
                 groups: "clanless",
-                spoilers: "true",
                 recurring: true
             }];
         var myPicker = new picker.Picker({
@@ -12051,7 +12045,7 @@
             defaultSettings: {
                 series: ['dotc', 'preq', 'tpb', 'tnp', 'pot', 'oots', 'avos', 'tbc', 'asc', 'cs', 'fg', 'modskc'],
                 groups: ['tc', 'sc', 'rc', 'wc', 'skc', 'clanless', 'other', 'afterlives', 'ancient'],
-                spoilers: ['true'],
+                spoilers: true,
                 recurringOnly: true
             },
             shouldIncludeItem: function (item, settings) {
@@ -12060,7 +12054,7 @@
                 // 2. the character's affiliation is one we have checked,
                 // 3. we are including spoilers, or this character is not marked as spoilers,
                 // 4. we haven't checked the "recurring only" box, or the character is a recurring character.
-                return settings.series.indexOf(item.series) !== -1 && settings.groups.indexOf(item.groups) !== -1 && settings.spoilers.indexOf(item.spoilers) && (!settings.recurringOnly || item.recurring);
+                return settings.series.indexOf(item.series) !== -1 && settings.groups.indexOf(item.groups) !== -1 && (settings.spoilers || !item.spoilers) && (!settings.recurringOnly || item.recurring);
             }
         });
 
@@ -12077,7 +12071,7 @@
                     maxBatchSize: '#max-batch-size',
                     groups: '.groups',
                     series: '.series',
-                    series: '.spoilers',
+                    spoilers: '#spoilers',
                     recurringOnly: '#recurring-only'
                 }
             },
