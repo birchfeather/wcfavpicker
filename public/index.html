@@ -638,7 +638,6 @@
     <!-- THEME TOGGLE END -->
 
     <div id="box">
-
         <div style="font-weight: 600; font-size: 32px; padding-bottom: 16px;"><i class="fa-solid fa-cat"></i> Warrior
             Cats Favorite Picker</div>
         <div class="col my-auto">
@@ -666,7 +665,8 @@
             All artwork featured in the character thumbnails are by
             <a href="https://cloudtail.tumblr.com/">Ursiday,</a>
             <a href="https://warriorsproject.tumblr.com/">NiftySenpai,</a>
-            <a href="https://www.tumblr.com/sky-scratchdesigns">lilcrawe,</a>
+            <a href="https://lemnnshark.tumblr.com/">lemnnshark,</a>
+            <a href="https://sky-scratchdesigns.tumblr.com/">Sky-Scratch,</a>
             <a href="https://velo-cats.tumblr.com/">Velociras</a> &
             <a href="https://eggfeather.tumblr.com/">esoteric-terror</a>!
         </p>
@@ -676,9 +676,7 @@
         </p>
 
         <p>
-
         <div id="container">
-
             <div id="picking">
                 <ul id="evaluating" class="item-list">
                 </ul>
@@ -834,12 +832,12 @@
 
                         <p>
                             <label>
-                                <input type="checkbox" class="spoilers" value="spoilers" checked> Include Spoilers
+                                <input type="checkbox" class="spoilers" value="true" checked> Include Spoilers
                             </label><br>
 
                             <span class="help-text">If unchecked, characters who were introduced or had their name changed in books
                                 released in the last 3 months will be excluded from the picker.
-                                <b>Currently, this includes Darktail's Judgement.</b></span>
+                                <b>Currently, this includes Darktail's Judgement and Guiding Light.</b></span>
                         </p>
                     </fieldset>
                 
@@ -877,7 +875,6 @@
     <script src="https://cdn.jsdelivr.net/npm/sortablejs@1.7.0/Sortable.min.js"></script>
     <script>
         'use strict';
-
         var items = [// DAWN OF THE CLANS
             {
                 id: "clearskydotc",
@@ -888,8 +885,8 @@
                 recurring: true
             }, {
                 id: "graywingdotc",
-                name: "Gray Wing (DotC)",
-                image: "../thumbnails/GRAYWINGDOTC.png?v=2",
+                name: "Gray Wing",
+                image: "../thumbnails/graywingwic.png?v=2",
                 series: "dotc",
                 groups: "wc",
                 recurring: true
@@ -924,14 +921,14 @@
             }, {
                 id: "shadedmossdotc",
                 name: "Shaded Moss",
-                image: "../thumbnails/SHADEDMOSS.png?v=2",
+                image: "../thumbnails/shadedmoss.png?v=2",
                 series: "dotc",
                 groups: "clanless",
                 recurring: true
             }, {
                 id: "rainsweptflowerdotc",
                 name: "Rainswept Flower",
-                image: "../thumbnails/RAINSWEPTFLOWER.png?v=2",
+                image: "../thumbnails/rainsweptflower.png?v=2",
                 series: "dotc",
                 groups: "clanless",
                 recurring: true
@@ -1099,7 +1096,7 @@
             }, {
                 id: "stonesongdotc",
                 name: "Stone Song (DotC)",
-                image: "../thumbnails/STONESONGDOTC.png?v=2",
+                image: "../thumbnails/stonesongdotc.png?v=2",
                 series: "dotc",
                 groups: "other",
                 recurring: true
@@ -1127,7 +1124,7 @@
             }, {
                 id: "thorndotc",
                 name: "Thorn (SkC)",
-                image: "../thumbnails/THORN.png?v=2",
+                image: "../thumbnails/thornskc.png?v=2",
                 series: "dotc",
                 groups: "skc",
                 recurring: true
@@ -1162,7 +1159,7 @@
             }, {
                 id: "sharphaildotc",
                 name: "Sharp Hail",
-                image: "../thumbnails/SHARPHAIL.png?v=2",
+                image: "../thumbnails/sharphail.png?v=2",
                 series: "dotc",
                 groups: "other",
                 recurring: true
@@ -1259,15 +1256,15 @@
                 recurring: true
             }, {
                 id: "tomdotc",
-                name: "Tom",
-                image: "../thumbnails/TOM.png?v=2",
+                name: "Tom (ES)",
+                image: "../thumbnails/tomes.png?v=2",
                 series: "dotc",
                 groups: "clanless",
                 recurring: true
             }, {
                 id: "nightstardotc",
                 name: "Nightstar (RC)",
-                image: "../thumbnails/NIGHTSTARRC.png?v=2",
+                image: "../thumbnails/nightstarrc.png?v=2",
                 series: "dotc",
                 groups: "rc",
                 recurring: true
@@ -1295,14 +1292,14 @@
             }, {
                 id: "cricketdotc",
                 name: "Cricket (DotC)",
-                image: "../thumbnails/CRICKET.png?v=2",
+                image: "../thumbnails/cricketdotc.png?v=2",
                 series: "dotc",
                 groups: "clanless",
                 recurring: true
             }, {
                 id: "nightheartro",
                 name: "Nightheart (Ro)",
-                image: "../thumbnails/NIGHTHEARTRO.png?v=2",
+                image: "../thumbnails/nightheartro.png?v=2",
                 series: "dotc",
                 groups: "clanless",
                 recurring: true
@@ -1358,7 +1355,7 @@
             }, {
                 id: "morningstardotc",
                 name: "Morning Star",
-                image: "../thumbnails/MORNINGSTARDOTC.png?v=2",
+                image: "../thumbnails/morningstardotc.png?v=2",
                 series: "dotc",
                 groups: "other",
                 recurring: true
@@ -1421,7 +1418,7 @@
             }, {
                 id: "frogdotc",
                 name: "Frog (Ro)",
-                image: "../thumbnails/FROG.png?v=2",
+                image: "../thumbnails/frogro.png?v=2",
                 series: "dotc",
                 groups: "clanless",
                 recurring: true
@@ -1434,8 +1431,8 @@
                 recurring: true
             }, {
                 id: "lightningdotc",
-                name: "Lightning",
-                image: "../thumbnails/LIGHTNING.png?v=2",
+                name: "Lightning (Website)",
+                image: "../thumbnails/lightningweb.png?v=2",
                 series: "dotc",
                 groups: "clanless",
                 recurring: true
@@ -1462,8 +1459,8 @@
                 recurring: true
             }, {
                 id: "tansydotc",
-                name: "Tansy",
-                image: "../thumbnails/TANSY.png?v=2",
+                name: "Tansy (cat)",
+                image: "../thumbnails/tansycat.png?v=2",
                 series: "dotc",
                 groups: "clanless",
                 recurring: true
@@ -1526,7 +1523,7 @@
             }, {
                 id: "raindotc",
                 name: "Rain (DotC)",
-                image: "../thumbnails/RAINDOTC.png?v=2",
+                image: "../thumbnails/raindotc.png?v=2",
                 series: "dotc",
                 groups: "clanless",
                 recurring: true
@@ -1582,7 +1579,7 @@
             }, {
                 id: "mothflighdotc",
                 name: "Moth Flight",
-                image: "../thumbnails/MOTHFLIGHT.png?v=2",
+                image: "../thumbnails/mothflight.png?v=2",
                 series: "dotc",
                 groups: "wc",
                 recurring: true
@@ -1652,21 +1649,21 @@
             }, {
                 id: "rockydotc",
                 name: "Rocky",
-                image: "../thumbnails/ROCKY.png?v=2",
+                image: "../thumbnails/rocky.png?v=2",
                 series: "dotc",
                 groups: "wc",
                 recurring: true
             }, {
                 id: "cowdotc",
-                name: "Cow",
+                name: "Cow (MFV)",
                 image: "../thumbnails/COW.png?v=2",
                 series: "dotc",
                 groups: "clanless",
                 recurring: true
             }, {
                 id: "mousedotc",
-                name: "Mouse",
-                image: "../thumbnails/MOUSE.png?v=2",
+                name: "Mouse (MFV)",
+                image: "../thumbnails/mousemfv.png?v=2",
                 series: "dotc",
                 groups: "clanless",
                 recurring: true
@@ -1701,7 +1698,7 @@
             }, {
                 id: "swiftdotc",
                 name: "Swift (DotC)",
-                image: "../thumbnails/SWIFT.png?v=2",
+                image: "../thumbnails/swiftdotc.png?v=2",
                 series: "dotc",
                 groups: "clanless",
                 recurring: true
@@ -1742,8 +1739,8 @@
                 recurring: true
             }, {
                 id: "gooseberrydotc",
-                name: "Gooseberry",
-                image: "../thumbnails/GOOSEBERRY.png?v=2",
+                name: "Gooseberry (TC)",
+                image: "../thumbnails/gooseberrytc.png?v=2",
                 series: "dotc",
                 groups: "tc",
                 recurring: true
@@ -1778,7 +1775,7 @@
             }, {
                 id: "shadepeltdotc",
                 name: "Shade Pelt",
-                image: "../thumbnails/SHADEPELTDOTC.png?v=2",
+                image: "../thumbnails/shadepeltdotc.png?v=2",
                 series: "dotc",
                 groups: "sc",
                 recurring: true
@@ -2003,14 +2000,14 @@
             }, {
                 id: "mothdotc",
                 name: "Moth (CotP)",
-                image: "../thumbnails/MOTH.png?v=2",
+                image: "../thumbnails/mothcotp.png?v=2",
                 series: "dotc",
                 groups: "other",
                 recurring: true
             }, {
                 id: "owlrh",
-                name: "Owl",
-                image: "../thumbnails/OWL.png?v=2",
+                name: "Owl (cat)",
+                image: "../thumbnails/owlcat.png?v=2",
                 series: "dotc",
                 groups: "other",
                 recurring: true
@@ -2031,14 +2028,14 @@
             }, {
                 id: "sagerh",
                 name: "Sage (Lo)",
-                image: "../thumbnails/SAGE.png?v=2",
+                image: "../thumbnails/sagelo.png?v=2",
                 series: "dotc",
                 groups: "clanless",
                 recurring: true
             }, {
                 id: "scoobydotc",
                 name: "Scooby",
-                image: "../thumbnails/SCOOBY.png?v=2",
+                image: "../thumbnails/scooby.png?v=2",
                 series: "dotc",
                 groups: "other",
                 recurring: true
@@ -2059,28 +2056,28 @@
             }, {
                 id: "silverdotc",
                 name: "Silver",
-                image: "../thumbnails/SILVER.png?v=2",
+                image: "../thumbnails/silver.png?v=2",
                 series: "dotc",
                 groups: "clanless",
                 recurring: true
             }, {
                 id: "snailrh",
                 name: "Snail (Ro)",
-                image: "../thumbnails/SNAIL.png?v=2",
+                image: "../thumbnails/snailro.png?v=2",
                 series: "dotc",
                 groups: "clanless",
                 recurring: true
             }, {
                 id: "snowtaildotc",
                 name: "Snow Tail",
-                image: "../thumbnails/SNOWTAIL.png?v=2",
+                image: "../thumbnails/snowtail.png?v=2",
                 series: "dotc",
                 groups: "rc",
                 recurring: true
             }, {
                 id: "sparrowrh",
                 name: "Sparrow (CotP)",
-                image: "../thumbnails/SPARROWCOTP.png?v=2",
+                image: "../thumbnails/sparrowcotp.png?v=2",
                 series: "dotc",
                 groups: "other",
                 recurring: true
@@ -2093,8 +2090,8 @@
                 recurring: true
             }, {
                 id: "stoatdotc",
-                name: "Stoat",
-                image: "../thumbnails/STOAT.png?v=2",
+                name: "Stoat (cat)",
+                image: "../thumbnails/stoatcat.png?v=2",
                 series: "dotc",
                 groups: "other",
                 recurring: true
@@ -2151,7 +2148,7 @@
             }, {
                 id: "nightfurcj",
                 name: "Nightfur",
-                image: "../thumbnails/NIGHTFUR.png?v=2",
+                image: "../thumbnails/nightfur.png?v=2",
                 series: "preq",
                 groups: "skc",
                 recurring: true
@@ -2179,14 +2176,14 @@
             }, {
                 id: "tansypawcj",
                 name: "Tansypaw (SkC)",
-                image: "../thumbnails/TANSYPAW.png?v=2",
+                image: "../thumbnails/tansypawskc.png?v=2",
                 series: "preq",
                 groups: "skc",
                 recurring: true
             }, {
                 id: "mintpawcj",
                 name: "Mintpaw (CJ)",
-                image: "../thumbnails/MINTPAW.png?v=2",
+                image: "../thumbnails/mintpawcj.png?v=2",
                 series: "preq",
                 groups: "skc",
                 recurring: true
@@ -2227,7 +2224,7 @@
                 recurring: true
             }, {
                 id: "rowanstarcj",
-                name: "Rowanstar (CotC)",
+                name: "Rowanstar (SkC)",
                 image: "../thumbnails/ROWANSTARSKC.png?v=2",
                 series: "preq",
                 groups: "skc",
@@ -2360,15 +2357,15 @@
                 recurring: true
             }, {
                 id: "swiftstarcj",
-                name: "Swiftstar (WC)",
-                image: "../thumbnails/SWIFTSTARWC.png?v=2",
+                name: "Swiftstar (WiC)",
+                image: "../thumbnails/swiftstarwic.png?v=2",
                 series: "preq",
                 groups: "wc",
                 recurring: true
             }, {
                 id: "milkfurcj",
-                name: "Milkfur (WC)",
-                image: "../thumbnails/MILKFURFQ.png?v=2",
+                name: "Milkfur (WiC)",
+                image: "../thumbnails/milkfurwic.png?v=2",
                 series: "preq",
                 groups: "wc",
                 recurring: true
@@ -2404,7 +2401,7 @@
             {
                 id: "galerisesf",
                 name: "Gale Rise",
-                image: "../thumbnails/GALERISE.png?v=2",
+                image: "../thumbnails/galerise.png?v=2",
                 series: "preq",
                 groups: "other",
                 recurring: true
@@ -2432,7 +2429,7 @@
             }, {
                 id: "rosebushsf",
                 name: "Rosebush",
-                image: "../thumbnails/ROSEBUSH.png?v=2",
+                image: "../thumbnails/rosebush.png?v=2",
                 series: "preq",
                 groups: "other",
                 recurring: true
@@ -2474,14 +2471,14 @@
             }, {
                 id: "thrushcallsf",
                 name: "Thrushcall",
-                image: "../thumbnails/THRUSHCALL.png?v=2",
+                image: "../thumbnails/thrushcall.png?v=2",
                 series: "preq",
                 groups: "other",
                 recurring: true
             }, {
                 id: "squirrelbrushsf",
                 name: "Squirrelbrush",
-                image: "../thumbnails/SQUIRRELBRUSH.png?v=2",
+                image: "../thumbnails/squirrelbrush.png?v=2",
                 series: "preq",
                 groups: "wc",
                 recurring: true
@@ -2502,7 +2499,7 @@
             }, {
                 id: "icefootsf",
                 name: "Icefoot",
-                image: "../thumbnails/ICEFOOT.png?v=2",
+                image: "../thumbnails/icefoot.png?v=2",
                 series: "preq",
                 groups: "wc",
                 recurring: true
@@ -2516,7 +2513,7 @@
             }, {
                 id: "frecklepeltsf",
                 name: "Frecklepelt",
-                image: "../thumbnails/FRECKLEPELT.png?v=2",
+                image: "../thumbnails/frecklepelt.png?v=2",
                 series: "preq",
                 groups: "tc",
                 recurring: true
@@ -2544,7 +2541,7 @@
             }, {
                 id: "mudsplashsf",
                 name: "Mudsplash",
-                image: "../thumbnails/MUDSPLASH.png?v=2",
+                image: "../thumbnails/mudsplash.png?v=2",
                 series: "preq",
                 groups: "other",
                 recurring: true
@@ -2565,7 +2562,7 @@
             }, {
                 id: "flashsf",
                 name: "Flash",
-                image: "../thumbnails/FLASH.png?v=2",
+                image: "../thumbnails/flash.png?v=2",
                 series: "preq",
                 groups: "wc",
                 recurring: true
@@ -2577,9 +2574,9 @@
                 groups: "clanless",
                 recurring: true
             }, {
-                id: "harepawsfsf",
+                id: "harepawsf",
                 name: "Harepaw (SF)",
-                image: "../thumbnails/HAREPAW.png?v=2",
+                image: "../thumbnails/harepawsf.png?v=2",
                 series: "preq",
                 groups: "wc",
                 recurring: true
@@ -2600,14 +2597,14 @@
             }, {
                 id: "dustflowersf",
                 name: "Dustflower",
-                image: "../thumbnails/DUSTFLOWER.png?v=2",
+                image: "../thumbnails/dustflower.png?v=2",
                 series: "preq",
                 groups: "wc",
                 recurring: true
             }, {
                 id: "stoneflowersf",
                 name: "Stoneflower",
-                image: "../thumbnails/STONEFLOWER.png?v=2",
+                image: "../thumbnails/stoneflower.png?v=2",
                 series: "preq",
                 groups: "tc",
                 recurring: true
@@ -2642,7 +2639,7 @@
             }, {
                 id: "owlpawtcsf",
                 name: "Owlpaw (TC)",
-                image: "../thumbnails/OWLPAW.png?v=2",
+                image: "../thumbnails/owlpawtc.png?v=2",
                 series: "preq",
                 groups: "tc",
                 recurring: true
@@ -2656,14 +2653,14 @@
             }, {
                 id: "fawnpeltsf",
                 name: "Fawnpelt",
-                image: "../thumbnails/FAWNPELT.png?v=2",
+                image: "../thumbnails/fawnpelt.png?v=2",
                 series: "preq",
                 groups: "tc",
                 recurring: true
             }, {
                 id: "nettlestingsf",
                 name: "Nettlesting",
-                image: "../thumbnails/NETTLESTING.png?v=2",
+                image: "../thumbnails/nettlesting.png?v=2",
                 series: "preq",
                 groups: "tc",
                 recurring: true
@@ -2675,16 +2672,16 @@
                 groups: "tc",
                 recurring: true
             }, {
-                id: "palepawstocsf",
+                id: "palepawsf",
                 name: "Palepaw (StoC)",
-                image: "../thumbnails/PALEPAW.png?v=2",
+                image: "../thumbnails/palepawstoc.png?v=2",
                 series: "preq",
                 groups: "tc",
                 recurring: true
             }, {
-                id: "songkittcsf",
+                id: "songkitsf",
                 name: "Songkit (TC)",
-                image: "../thumbnails/SONGKIT.png?v=2",
+                image: "../thumbnails/songkittc.png?v=2",
                 series: "preq",
                 groups: "tc",
                 recurring: true
@@ -2705,7 +2702,7 @@
             }, {
                 id: "pinebrushsf",
                 name: "Pinebrush",
-                image: "../thumbnails/PINEBRUSH.png?v=2",
+                image: "../thumbnails/pinebrush.png?v=2",
                 series: "preq",
                 groups: "sc",
                 recurring: true
@@ -2733,14 +2730,14 @@
             }, {
                 id: "shineflowersf",
                 name: "Shineflower",
-                image: "../thumbnails/SHINEFLOWER.png?v=2",
+                image: "../thumbnails/shineflower.png?v=2",
                 series: "preq",
                 groups: "rc",
                 recurring: true
             }, {
-                id: "curlkittcsf",
+                id: "curlkitsf",
                 name: "Curlkit (TC)",
-                image: "../thumbnails/CURLKIT.png?v=2",
+                image: "../thumbnails/curlkittc.png?v=2",
                 series: "preq",
                 groups: "tc",
                 recurring: true
@@ -2761,7 +2758,7 @@
             }, {
                 id: "fognuzzlesf",
                 name: "Fog Nuzzle",
-                image: "../thumbnails/FOGNUZZLE.png?v=2",
+                image: "../thumbnails/fognuzzle.png?v=2",
                 series: "preq",
                 groups: "other",
                 recurring: true
@@ -2775,21 +2772,21 @@
             }, {
                 id: "huntflysf",
                 name: "Hunt Fly",
-                image: "../thumbnails/HUNTFLY.png?v=2",
+                image: "../thumbnails/huntfly.png?v=2",
                 series: "preq",
                 groups: "other",
                 recurring: true
             }, {
                 id: "lightningstssf",
                 name: "Lightning Scratches the Sky",
-                image: "../thumbnails/LIGHTNINGSCRATCHESTHESKY.png?v=2",
+                image: "../thumbnails/lightningscratchesthesky.png?v=2",
                 series: "preq",
                 groups: "other",
                 recurring: true
             }, {
                 id: "lightningkitsf",
                 name: "Lightningkit",
-                image: "../thumbnails/LIGHTNINGKIT.png?v=2",
+                image: "../thumbnails/lightningkit.png?v=2",
                 series: "preq",
                 groups: "clanless",
                 recurring: true
@@ -2810,42 +2807,42 @@
             }, {
                 id: "owlflightsf",
                 name: "Owlflight",
-                image: "../thumbnails/OWLFLIGHT.png?v=2",
+                image: "../thumbnails/owlflight.png?v=2",
                 series: "preq",
                 groups: "tc",
                 recurring: true
             }, {
                 id: "pebblelungesf",
                 name: "Pebble Lunge",
-                image: "../thumbnails/PEBBLELUNGE.png?v=2",
+                image: "../thumbnails/pebblelunge.png?v=2",
                 series: "preq",
                 groups: "other",
                 recurring: true
             }, {
-                id: "pigeonpawstocsf",
+                id: "pigeonpawsf",
                 name: "Pigeonpaw (StoC)",
-                image: "../thumbnails/PIGEONPAW.png?v=2",
+                image: "../thumbnails/pigeonpawstoc.png?v=2",
                 series: "preq",
                 groups: "other",
                 recurring: true
             }, {
-                id: "quailpawstocsf",
+                id: "quailpawsf",
                 name: "Quailpaw (StoC)",
-                image: "../thumbnails/QUAILPAW.png?v=2",
+                image: "../thumbnails/quailpawstoc.png?v=2",
                 series: "preq",
                 groups: "tc",
                 recurring: true
             }, {
-                id: "rainkitstocsf",
+                id: "rainkitsf",
                 name: "Rainkit (StoC)",
-                image: "../thumbnails/RAINKIT.png?v=2",
+                image: "../thumbnails/rainkitstoc.png?v=2",
                 series: "preq",
                 groups: "other",
                 recurring: true
             }, {
                 id: "ripplepurrsf",
                 name: "Ripple Purr",
-                image: "../thumbnails/RIPPLEPURR.png?v=2",
+                image: "../thumbnails/ripplepurr.png?v=2",
                 series: "preq",
                 groups: "other",
                 recurring: true
@@ -2859,7 +2856,7 @@
             }, {
                 id: "rollflicksf",
                 name: "Roll Flick",
-                image: "../thumbnails/ROLLFLICK.png?v=2",
+                image: "../thumbnails/rollflick.png?v=2",
                 series: "preq",
                 groups: "other",
                 recurring: true
@@ -2901,7 +2898,7 @@
             }, {
                 id: "wanderblinksf",
                 name: "Wander Blink",
-                image: "../thumbnails/WANDERBLINK.png?v=2",
+                image: "../thumbnails/wanderblink.png?v=2",
                 series: "preq",
                 groups: "other",
                 recurring: true
@@ -2929,14 +2926,14 @@
             }, {
                 id: "windkitsf",
                 name: "Windkit",
-                image: "../thumbnails/WINDKIT.png?v=2",
+                image: "../thumbnails/windkit.png?v=2",
                 series: "preq",
                 groups: "clanless",
                 recurring: true
             }, {
                 id: "wishyowlsf",
                 name: "Wish Yowl",
-                image: "../thumbnails/WISHYOWL.png?v=2",
+                image: "../thumbnails/wishyowl.png?v=2",
                 series: "preq",
                 groups: "other",
                 recurring: true
@@ -2965,7 +2962,7 @@
             }, {
                 id: "silverpawsotc",
                 name: "Silverpaw (TPB)",
-                image: "../thumbnails/SILVERPAWTPB.png?v=2",
+                image: "../thumbnails/silverpawtpb.png?v=2",
                 series: "fg",
                 groups: "rc",
                 recurring: true
@@ -3036,6 +3033,13 @@
                 id: "sunpeltsotc",
                 name: "Sunpelt (LC)",
                 image: "../thumbnails/SUNPELTLC.png?v=2",
+                series: "fg",
+                groups: "ancient",
+                recurring: true
+            }, {
+                id: "swiftstarsotc",
+                name: "Swiftstar (LC)",
+                image: "../thumbnails/swiftstarlc.png?v=2",
                 series: "fg",
                 groups: "ancient",
                 recurring: true
@@ -3170,7 +3174,7 @@
             }, {
                 id: "reedshinecotc",
                 name: "Reedshine (CotC)",
-                image: "../thumbnails/REEDSHINECOTC.png?v=2",
+                image: "../thumbnails/reedshinecotc.png?v=2",
                 series: "fg",
                 groups: "rc",
                 recurring: true
@@ -3253,8 +3257,8 @@
                 recurring: true
             }, {
                 id: "adderpawcotc",
-                name: "Adderpaw (WC)",
-                image: "../thumbnails/ADDERPAW.png?v=2",
+                name: "Adderpaw (WiC)",
+                image: "../thumbnails/adderpawwic.png?v=2",
                 series: "fg",
                 groups: "wc",
                 recurring: true
@@ -3338,7 +3342,7 @@
             }, {
                 id: "oatpawcotc",
                 name: "Oatpaw (RC)",
-                image: "../thumbnails/OATPAW.png?v=2",
+                image: "../thumbnails/oatpawrc.png?v=2",
                 series: "fg",
                 groups: "rc",
                 recurring: true
@@ -3386,15 +3390,15 @@
                 recurring: true
             }, {
                 id: "quickpawcotc",
-                name: "Quickpaw (WC)",
-                image: "../thumbnails/QUICKPAWWC.png?v=2",
+                name: "Quickpaw (WiC)",
+                image: "../thumbnails/quickpawwic.png?v=2",
                 series: "fg",
                 groups: "wc",
                 recurring: true
             }, {
                 id: "gorseclawcotc",
-                name: "Gorseclaw (WC)",
-                image: "../thumbnails/GORSECLAWWC.png?v=2",
+                name: "Gorseclaw (WiC)",
+                image: "../thumbnails/gorseclawwic.png?v=2",
                 series: "fg",
                 groups: "wc",
                 recurring: true
@@ -3428,8 +3432,8 @@
                 recurring: true
             }, {
                 id: "pricklekitcotc",
-                name: "Pricklekit (WC)",
-                image: "../thumbnails/PRICKLEKITWC.png?v=2",
+                name: "Pricklekit (WiC)",
+                image: "../thumbnails/pricklekitwic.png?v=2",
                 series: "fg",
                 groups: "wc",
                 recurring: true
@@ -3541,7 +3545,7 @@
             }, {
                 id: "reedstarcotc",
                 name: "Reedstar",
-                image: "../thumbnails/REEDSTAR.png?v=2",
+                image: "../thumbnails/reedstar.png?v=2",
                 series: "fg",
                 groups: "rc",
                 recurring: true
@@ -3554,8 +3558,8 @@
                 recurring: true
             }, {
                 id: "dovestarcotc",
-                name: "Dovestar (WC)",
-                image: "../thumbnails/DOVESTARWC.png?v=2",
+                name: "Dovestar (WiC)",
+                image: "../thumbnails/dovestarwic.png?v=2",
                 series: "fg",
                 groups: "wc",
                 recurring: true
@@ -3716,7 +3720,7 @@
             }, {
                 id: "raincloudcotc",
                 name: "Raincloud",
-                image: "../thumbnails/RAINCLOUD.png?v=2",
+                image: "../thumbnails/raincloud.png?v=2",
                 series: "fg",
                 groups: "skc",
                 recurring: true
@@ -3743,8 +3747,8 @@
                 recurring: true
             }, {
                 id: "birchstarcotcwc",
-                name: "Birchstar (WC)",
-                image: "../thumbnails/BIRCHSTARWC.png?v=2",
+                name: "Birchstar (WiC)",
+                image: "../thumbnails/birchstarwic.png?v=2",
                 series: "fg",
                 groups: "wc",
                 recurring: true
@@ -3800,7 +3804,7 @@
             }, {
                 id: "spottedpawcotc",
                 name: "Spottedpaw (ShC)",
-                image: "../thumbnails/SPOTTEDPAW.png?v=2",
+                image: "../thumbnails/spottedpawshc.png?v=2",
                 series: "fg",
                 groups: "sc",
                 recurring: true
@@ -3835,7 +3839,7 @@
             }, {
                 id: "dovestarcotcrc",
                 name: "Dovestar (RC)",
-                image: "../thumbnails/DOVESTARRC.png?v=2",
+                image: "../thumbnails/dovestarrc.png?v=2",
                 series: "fg",
                 groups: "rc",
                 recurring: true
@@ -3843,14 +3847,14 @@
             {
                 id: "tanglepawbotc",
                 name: "Tanglepaw (RC)",
-                image: "../thumbnails/TANGLEPAW.png?v=2",
+                image: "../thumbnails/tanglepawrc.png?v=2",
                 series: "fg",
                 groups: "rc",
                 recurring: true
             }, {
                 id: "rushpawbotc",
-                name: "Rushpaw",
-                image: "../thumbnails/RUSHPAW.png?v=2",
+                name: "Rushpaw (BotC)",
+                image: "../thumbnails/rushpawbotc.png?v=2",
                 series: "fg",
                 groups: "rc",
                 recurring: true
@@ -3976,7 +3980,7 @@
             }, {
                 id: "mothwhiskerbotc",
                 name: "Mothwhisker",
-                image: "../thumbnails/MOTHWHISKER.png?v=2",
+                image: "../thumbnails/mothwhisker.png?v=2",
                 series: "fg",
                 groups: "tc",
                 recurring: true
@@ -4053,9 +4057,16 @@
                 groups: "tc",
                 recurring: true
             }, {
+                id: "shinecloudmv",
+                name: "Shinecloud",
+                image: "../thumbnails/shinecloud.png?v=2",
+                series: "preq",
+                groups: "tc",
+                recurring: true
+            }, {
                 id: "oatspecklemv",
                 name: "Oatspeckle",
-                image: "../thumbnails/OATSPECKLE.png?v=2",
+                image: "../thumbnails/oatspeckle.png?v=2",
                 series: "preq",
                 groups: "tc",
                 recurring: true
@@ -4069,14 +4080,14 @@
             }, {
                 id: "rabbitfurmv",
                 name: "Rabbitfur",
-                image: "../thumbnails/RABBITFUR.png?v=2",
+                image: "../thumbnails/rabbitfur.png?v=2",
                 series: "preq",
                 groups: "tc",
                 recurring: true
             }, {
                 id: "seedpeltmv",
                 name: "Seedpelt (MV)",
-                image: "../thumbnails/SEEDPELTMV.png?v=2",
+                image: "../thumbnails/seedpeltmv.png?v=2",
                 series: "preq",
                 groups: "tc",
                 recurring: true
@@ -4132,7 +4143,7 @@
             }, {
                 id: "sloefurmv",
                 name: "Sloefur (ShC)",
-                image: "../thumbnails/SLOEFURMV.png?v=2",
+                image: "../thumbnails/sloefurshc.png?v=2",
                 series: "preq",
                 groups: "sc",
                 recurring: true
@@ -4160,7 +4171,7 @@
             }, {
                 id: "larkwingmv",
                 name: "Larkwing (MV)",
-                image: "../thumbnails/LARKWINGMV.png?v=2",
+                image: "../thumbnails/larkwingmv.png?v=2",
                 series: "preq",
                 groups: "wc",
                 recurring: true
@@ -4174,7 +4185,7 @@
             }, {
                 id: "flowerpawmv",
                 name: "Flowerpaw (TC)",
-                image: "../thumbnails/FLOWERPAW.png?v=2",
+                image: "../thumbnails/flowerpawtc.png?v=2",
                 series: "preq",
                 groups: "tc",
                 recurring: true
@@ -4188,7 +4199,7 @@
             }, {
                 id: "patchkitmv",
                 name: "Patchkit (MV)",
-                image: "../thumbnails/PATCHKIT.png?v=2",
+                image: "../thumbnails/patchkitmv.png?v=2",
                 series: "preq",
                 groups: "tc",
                 recurring: true
@@ -4202,14 +4213,14 @@
             }, {
                 id: "ravenwingmv",
                 name: "Ravenwing",
-                image: "../thumbnails/RAVENWING.png?v=2",
+                image: "../thumbnails/ravenwing.png?v=2",
                 series: "preq",
                 groups: "tc",
                 recurring: true
             }, {
                 id: "perchpawmv",
                 name: "Perchpaw (MV)",
-                image: "../thumbnails/PERCHPAW.png?v=2",
+                image: "../thumbnails/perchpawmv.png?v=2",
                 series: "preq",
                 groups: "rc",
                 recurring: true
@@ -4230,7 +4241,7 @@
             }, {
                 id: "shyheartmv",
                 name: "Shyheart",
-                image: "../thumbnails/SHYHEART.png?v=2",
+                image: "../thumbnails/shyheart.png?v=2",
                 series: "preq",
                 groups: "rc",
                 recurring: true
@@ -4244,7 +4255,7 @@
             }, {
                 id: "willownosemv",
                 name: "Willownose",
-                image: "../thumbnails/WILLOWNOSE.png?v=2",
+                image: "../thumbnails/willownose.png?v=2",
                 series: "preq",
                 groups: "rc",
                 recurring: true
@@ -4280,7 +4291,7 @@
             }, {
                 id: "deerpawpc",
                 name: "Deerpaw (PC)",
-                image: "../thumbnails/DEERPAW.png?v=2",
+                image: "../thumbnails/deerpawpc.png?v=2",
                 series: "preq",
                 groups: "tc",
                 recurring: true
@@ -4357,7 +4368,7 @@
             }, {
                 id: "rabbitleappc",
                 name: "Rabbitleap (TC)",
-                image: "../thumbnails/RABBITLEAPTC.png?v=2",
+                image: "../thumbnails/rabbitleaptc.png?v=2",
                 series: "preq",
                 groups: "tc",
                 recurring: true
@@ -4413,14 +4424,14 @@
             }, {
                 id: "seedpeltpc",
                 name: "Seedpelt (PC)",
-                image: "../thumbnails/SEEDPELTPC.png?v=2",
+                image: "../thumbnails/seedpeltpc.png?v=2",
                 series: "preq",
                 groups: "tc",
                 recurring: true
             }, {
                 id: "mochapc",
                 name: "Mocha",
-                image: "../thumbnails/MOCHA.png?v=2",
+                image: "../thumbnails/mocha.png?v=2",
                 series: "preq",
                 groups: "clanless",
                 recurring: true
@@ -4729,15 +4740,15 @@
                 recurring: true
             }, {
                 id: "moletr",
-                name: "Mole",
+                name: "Mole (cat)",
                 image: "../thumbnails/MOLE.png?v=2",
                 series: "preq",
                 groups: "clanless",
                 recurring: true
             }, {
                 id: "thrushpelttr",
-                name: "Thrushpelt (WC)",
-                image: "../thumbnails/THRUSHPELTWC.png?v=2",
+                name: "Thrushpelt (WiC)",
+                image: "../thumbnails/thrushpeltwic.png?v=2",
                 series: "preq",
                 groups: "wc",
                 recurring: true
@@ -4785,8 +4796,8 @@
                 recurring: true
             }, {
                 id: "stagleaptr",
-                name: "Stagleap (WC)",
-                image: "../thumbnails/STAGLEAPWC.png?v=2",
+                name: "Stagleap (WiC)",
+                image: "../thumbnails/stagleapwic.png?v=2",
                 series: "preq",
                 groups: "wc",
                 recurring: true
@@ -4855,15 +4866,15 @@
                 recurring: true
             }, {
                 id: "finchkittr",
-                name: "Finchkit (WC)",
-                image: "../thumbnails/FINCHKIT.png?v=2",
+                name: "Finchkit (WiC)",
+                image: "../thumbnails/finchkitwic.png?v=2",
                 series: "preq",
                 groups: "wc",
                 recurring: true
             }, {
                 id: "jaytr",
-                name: "Jay",
-                image: "../thumbnails/JAY.png?v=2",
+                name: "Jay (cat)",
+                image: "../thumbnails/jaycat.png?v=2",
                 series: "preq",
                 groups: "clanless",
                 recurring: true
@@ -4877,14 +4888,14 @@
             }, {
                 id: "pixietr",
                 name: "Pixie",
-                image: "../thumbnails/PIXIE.png?v=2",
+                image: "../thumbnails/pixie.png?v=2",
                 series: "preq",
                 groups: "clanless",
                 recurring: true
             }, {
                 id: "sparrowtr",
                 name: "Sparrow (Ro)",
-                image: "../thumbnails/SPARROWRO.png?v=2",
+                image: "../thumbnails/sparrowro.png?v=2",
                 series: "preq",
                 groups: "clanless",
                 recurring: true
@@ -4898,7 +4909,7 @@
             }, {
                 id: "pigeonflighttr",
                 name: "Pigeonflight",
-                image: "../thumbnails/PIGEONFLIGHT.png?v=2",
+                image: "../thumbnails/pigeonflight.png?v=2",
                 series: "preq",
                 groups: "wc",
                 recurring: true
@@ -4918,8 +4929,8 @@
                 recurring: true
             }, {
                 id: "wrenflighttr",
-                name: "Wrenflight (WC)",
-                image: "../thumbnails/WRENFLIGHTWC.png?v=2",
+                name: "Wrenflight (WiC)",
+                image: "../thumbnails/wrenflightwic.png?v=2",
                 series: "preq",
                 groups: "wc",
                 recurring: true
@@ -4962,7 +4973,7 @@
             }, {
                 id: "hollowbellyys",
                 name: "Hollowbelly",
-                image: "../thumbnails/HOLLOWBELLY.png?v=2",
+                image: "../thumbnails/hollowbelly.png?v=2",
                 series: "preq",
                 groups: "sc",
                 recurring: true
@@ -4976,7 +4987,7 @@
             }, {
                 id: "silverflameys",
                 name: "Silverflame",
-                image: "../thumbnails/SILVERFLAME.png?v=2",
+                image: "../thumbnails/silverflame.png?v=2",
                 series: "preq",
                 groups: "sc",
                 recurring: true
@@ -4997,14 +5008,14 @@
             }, {
                 id: "cedarstarys",
                 name: "Cedarstar",
-                image: "../thumbnails/CEDARSTAR.png?v=2",
+                image: "../thumbnails/cedarstar.png?v=2",
                 series: "preq",
                 groups: "sc",
                 recurring: true
             }, {
                 id: "stonetoothys",
                 name: "Stonetooth (BP)",
-                image: "../thumbnails/STONETOOTH.png?v=2",
+                image: "../thumbnails/stonetoothbp.png?v=2",
                 series: "preq",
                 groups: "sc",
                 recurring: true
@@ -5228,7 +5239,7 @@
             }, {
                 id: "littlekitys",
                 name: "Littlekit (YS)",
-                image: "../thumbnails/LITTLEKIT.png?v=2",
+                image: "../thumbnails/littlekitys.png?v=2",
                 series: "preq",
                 groups: "sc",
                 recurring: true
@@ -5283,8 +5294,8 @@
                 recurring: true
             }, {
                 id: "turtlekitys",
-                name: "Turtlekit",
-                image: "../thumbnails/TURTLEKIT.png?v=2",
+                name: "Turtlekit (ShC)",
+                image: "../thumbnails/turtlekitshc.png?v=2",
                 series: "preq",
                 groups: "sc",
                 recurring: true
@@ -5326,7 +5337,7 @@
             }, {
                 id: "mosspawys",
                 name: "Mosspaw (ShC)",
-                image: "../thumbnails/MOSSPAW.png?v=2",
+                image: "../thumbnails/mosspawshc.png?v=2",
                 series: "preq",
                 groups: "sc",
                 recurring: true
@@ -5353,8 +5364,8 @@
                 recurring: true
             }, {
                 id: "mintkitys",
-                name: "Mintkit",
-                image: "../thumbnails/MINTKIT.png?v=2",
+                name: "Mintkit (ShC)",
+                image: "../thumbnails/mintkitshc.png?v=2",
                 series: "preq",
                 groups: "sc",
                 recurring: true
@@ -5438,8 +5449,8 @@
                 recurring: true
             }, {
                 id: "magpiecp",
-                name: "Magpie",
-                image: "../thumbnails/MAGPIE.png?v=2",
+                name: "Magpie (cat)",
+                image: "../thumbnails/magpiecat.png?v=2",
                 series: "preq",
                 groups: "clanless",
                 recurring: true
@@ -5509,7 +5520,7 @@
             }, {
                 id: "cedarpeltcp",
                 name: "Cedarpelt (RC)",
-                image: "../thumbnails/CEDARPELT.png?v=2",
+                image: "../thumbnails/cedarpeltrc.png?v=2",
                 series: "preq",
                 groups: "rc",
                 recurring: true
@@ -5698,7 +5709,7 @@
             }, {
                 id: "sparrowfeathercp",
                 name: "Sparrowfeather (StaC)",
-                image: "../thumbnails/SPARROWFEATHERRC.png?v=2",
+                image: "../thumbnails/sparrowfeatherstac.png?v=2",
                 series: "preq",
                 groups: "rc",
                 recurring: true
@@ -5726,7 +5737,7 @@
             }, {
                 id: "willowkitcp",
                 name: "Willowkit (CrP)",
-                image: "../thumbnails/WILLOWKIT.png?v=2",
+                image: "../thumbnails/willowkitcrp.png?v=2",
                 series: "preq",
                 groups: "rc",
                 recurring: true
@@ -5747,7 +5758,7 @@
             }, {
                 id: "splashkitcp",
                 name: "Splashkit (CrP)",
-                image: "../thumbnails/SPLASHKIT.png?v=2",
+                image: "../thumbnails/splashkitcrp.png?v=2",
                 series: "preq",
                 groups: "rc",
                 recurring: true
@@ -5839,14 +5850,14 @@
             }, {
                 id: "thrushpeltbp",
                 name: "Thrushpelt (TC)",
-                image: "../thumbnails/THRUSHPELTTC.png?v=2",
+                image: "../thumbnails/thrushpelttc.png?v=2",
                 series: "preq",
                 groups: "tc",
                 recurring: true
             }, {
                 id: "sunstarbp",
                 name: "Sunstar",
-                image: "../thumbnails/SUNSTAR.png?v=2",
+                image: "../thumbnails/sunstar.png?v=2",
                 series: "preq",
                 groups: "tc",
                 recurring: true
@@ -5874,7 +5885,7 @@
             }, {
                 id: "mosskitbp",
                 name: "Mosskit (TC)",
-                image: "../thumbnails/MOSSKIT.png?v=2",
+                image: "../thumbnails/mosskittc.png?v=2",
                 series: "preq",
                 groups: "tc",
                 recurring: true
@@ -5902,15 +5913,15 @@
                 recurring: true
             }, {
                 id: "robinkitlh",
-                name: "Robinkit",
-                image: "../thumbnails/ROBINKIT.png?v=2",
+                name: "Robinkit (RC)",
+                image: "../thumbnails/robinkitrc.png?v=2",
                 series: "preq",
                 groups: "rc",
                 recurring: true
             }, {
                 id: "woodkitlh",
-                name: "Woodkit",
-                image: "../thumbnails/WOODKIT.png?v=2",
+                name: "Woodkit (RC)",
+                image: "../thumbnails/woodkitrc.png?v=2",
                 series: "preq",
                 groups: "rc",
                 recurring: true
@@ -5962,13 +5973,13 @@
                 id: "dudleyoc",
                 name: "Dudley",
                 image: "../thumbnails/DUDLEY.png?v=2",
-                series: "preq",
+                series: "avos",
                 groups: "clanless",
                 recurring: true
             }, {
                 id: "galekitoc",
-                name: "Galekit",
-                image: "../thumbnails/GALEKIT.png?v=2",
+                name: "Galekit (OC)",
+                image: "../thumbnails/galekitoc.png?v=2",
                 series: "preq",
                 groups: "wc",
                 recurring: true
@@ -5982,14 +5993,14 @@
             }, {
                 id: "snowflakeoc",
                 name: "Snowflake (KP)",
-                image: "../thumbnails/SNOWFLAKEKP.png?v=2",
+                image: "../thumbnails/snowflakekp.png?v=2",
                 series: "preq",
                 groups: "clanless",
                 recurring: true
             }, {
                 id: "nutmegoc",
                 name: "Nutmeg (OC)",
-                image: "../thumbnails/NUTMEGOC.png?v=2",
+                image: "../thumbnails/nutmegoc.png?v=2",
                 series: "preq",
                 groups: "clanless",
                 recurring: true
@@ -6122,8 +6133,8 @@
                 recurring: true
             }, {
                 id: "blossomkittpb",
-                name: "Blossomkit",
-                image: "../thumbnails/BLOSSOMKIT.png?v=2",
+                name: "Blossomkit (ShC)",
+                image: "../thumbnails/blossomkitshc.png?v=2",
                 series: "tpb",
                 groups: "sc",
                 recurring: true
@@ -6276,8 +6287,8 @@
                 recurring: true
             }, {
                 id: "eaglekittpb",
-                name: "Eaglekit",
-                image: "../thumbnails/EAGLEKIT.png?v=2",
+                name: "Eaglekit (WiC)",
+                image: "../thumbnails/eaglekitwic.png?v=2",
                 series: "tpb",
                 groups: "wc",
                 recurring: true
@@ -6367,8 +6378,8 @@
                 recurring: true
             }, {
                 id: "quailkittpb",
-                name: "Quailkit (WC)",
-                image: "../thumbnails/QUAILKIT.png?v=2",
+                name: "Quailkit (WiC)",
+                image: "../thumbnails/quailkitwic.png?v=2",
                 series: "tpb",
                 groups: "wc",
                 recurring: true
@@ -6465,8 +6476,8 @@
                 recurring: true
             }, {
                 id: "mudclawtpb",
-                name: "Mudclaw (WC)",
-                image: "../thumbnails/MUDCLAWWC.png?v=2",
+                name: "Mudclaw (WiC)",
+                image: "../thumbnails/mudclawwic.png?v=2",
                 series: "tpb",
                 groups: "wc",
                 recurring: true
@@ -6479,8 +6490,8 @@
                 recurring: true
             }, {
                 id: "gorsepawtpb",
-                name: "Gorsepaw",
-                image: "../thumbnails/GORSEPAW.png?v=2",
+                name: "Gorsepaw (WiC)",
+                image: "../thumbnails/gorsepawwic.png?v=2",
                 series: "tpb",
                 groups: "wc",
                 recurring: true
@@ -6515,7 +6526,7 @@
             }, {
                 id: "runningbrooktpb",
                 name: "Runningbrook",
-                image: "../thumbnails/RUNNINGBROOK.png?v=2",
+                image: "../thumbnails/runningbrook.png?v=2",
                 series: "tpb",
                 groups: "wc",
                 recurring: true
@@ -6571,7 +6582,7 @@
             }, {
                 id: "featherkittpb",
                 name: "Featherkit (Website)",
-                image: "../thumbnails/FEATHERKIT.png?v=2",
+                image: "../thumbnails/featherkitweb.png?v=2",
                 series: "tpb",
                 groups: "tc",
                 recurring: true
@@ -6585,7 +6596,7 @@
             }, {
                 id: "snowkittpb",
                 name: "Snowkit (TPB)",
-                image: "../thumbnails/SNOWKIT.png?v=2",
+                image: "../thumbnails/snowkittpb.png?v=2",
                 series: "tpb",
                 groups: "tc",
                 recurring: true
@@ -6599,7 +6610,7 @@
             }, {
                 id: "shadepelttpb",
                 name: "Shadepelt (TPB)",
-                image: "../thumbnails/SHADEPELTTPB.png?v=2",
+                image: "../thumbnails/shadepelttpb.png?v=2",
                 series: "tpb",
                 groups: "rc",
                 recurring: true
@@ -6613,7 +6624,7 @@
             }, {
                 id: "swiftpawtpb",
                 name: "Swiftpaw (TPB)",
-                image: "../thumbnails/SWIFTPAW.png?v=2",
+                image: "../thumbnails/swiftpawtpb.png?v=2",
                 series: "tpb",
                 groups: "tc",
                 recurring: true
@@ -6697,7 +6708,7 @@
             }, {
                 id: "barleysmothertpb",
                 name: "Barley's Mother",
-                image: "../thumbnails/BARLEYSMOTHER.png?v=2",
+                image: "../thumbnails/barleysmother.png?v=2",
                 series: "tpb",
                 groups: "other",
                 recurring: true
@@ -6726,21 +6737,21 @@
             }, {
                 id: "pinets",
                 name: "Pine (TS)",
-                image: "../thumbnails/PINE.png?v=2",
+                image: "../thumbnails/pinets.png?v=2",
                 series: "tnp",
                 groups: "clanless",
                 recurring: true
             }, {
                 id: "shnukyts",
                 name: "Shnuky",
-                image: "../thumbnails/SHNUKY.png?v=2",
+                image: "../thumbnails/shnuky.png?v=2",
                 series: "tnp",
                 groups: "clanless",
                 recurring: true
             }, {
                 id: "patchts",
-                name: "Patch (TS)",
-                image: "../thumbnails/PATCHTS.png?v=2",
+                name: "Patch (KP)",
+                image: "../thumbnails/patchkp.png?v=2",
                 series: "tnp",
                 groups: "clanless",
                 recurring: true
@@ -6852,8 +6863,8 @@
                 recurring: true
             }, {
                 id: "bellafq",
-                name: "Bella (KP)",
-                image: "../thumbnails/BELLAKP.png?v=2",
+                name: "Bella (FQ)",
+                image: "../thumbnails/bellafq.png?v=2",
                 series: "modskc",
                 groups: "clanless",
                 recurring: true
@@ -6867,7 +6878,7 @@
             }, {
                 id: "screefq",
                 name: "Scree (Ro)",
-                image: "../thumbnails/SCREE.png?v=2",
+                image: "../thumbnails/screero.png?v=2",
                 series: "modskc",
                 groups: "clanless",
                 recurring: true
@@ -6895,7 +6906,7 @@
             }, {
                 id: "sharpclawfq",
                 name: "Sharpclaw (SkC)",
-                image: "../thumbnails/SHARPCLAW.png?v=2",
+                image: "../thumbnails/sharpclawskc.png?v=2",
                 series: "modskc",
                 groups: "skc",
                 recurring: true
@@ -6965,7 +6976,7 @@
             }, {
                 id: "sparrowpeltfq",
                 name: "Sparrowpelt (SkC)",
-                image: "../thumbnails/SPARROWPELT.png?v=2",
+                image: "../thumbnails/sparrowpeltskc.png?v=2",
                 series: "modskc",
                 groups: "skc",
                 recurring: true
@@ -7015,7 +7026,7 @@
             }, {
                 id: "scrapsgv",
                 name: "Scraps",
-                image: "../thumbnails/SCRAPS.png?v=2",
+                image: "../thumbnails/scraps.png?v=2",
                 series: "tbc",
                 groups: "other",
                 recurring: true
@@ -7028,8 +7039,8 @@
                 recurring: true
             }, {
                 id: "snipegv",
-                name: "Snipe",
-                image: "../thumbnails/SNIPE.png?v=2",
+                name: "Snipe (cat)",
+                image: "../thumbnails/snipecat.png?v=2",
                 series: "tbc",
                 groups: "other",
                 recurring: true
@@ -7043,8 +7054,8 @@
                 recurring: true
             }, {
                 id: "fritzrp",
-                name: "Fritz (RP)",
-                image: "../thumbnails/FRITZRP.png?v=2",
+                name: "Fritz (KP)",
+                image: "../thumbnails/fritzkp.png?v=2",
                 series: "tpb",
                 groups: "clanless",
                 recurring: true
@@ -7071,15 +7082,15 @@
                 recurring: true
             }, {
                 id: "pouncerp",
-                name: "Pounce",
-                image: "../thumbnails/POUNCE.png?v=2",
+                name: "Pounce (RP)",
+                image: "../thumbnails/pouncerp.png?v=2",
                 series: "tpb",
                 groups: "clanless",
                 recurring: true
             }, {
                 id: "snapperrp",
                 name: "Snapper",
-                image: "../thumbnails/SNAPPER.png?v=2",
+                image: "../thumbnails/snapper.png?v=2",
                 series: "tpb",
                 groups: "clanless",
                 recurring: true
@@ -7107,7 +7118,7 @@
             }, {
                 id: "violetrp",
                 name: "Violet (KP)",
-                image: "../thumbnails/VIOLET.png?v=2",
+                image: "../thumbnails/violetkp.png?v=2",
                 series: "tpb",
                 groups: "clanless",
                 recurring: true
@@ -7185,7 +7196,7 @@
             }, {
                 id: "rowanfursd",
                 name: "Rowanfur",
-                image: "../thumbnails/ROWANFUR.png?v=2",
+                image: "../thumbnails/rowanfur.png?v=2",
                 series: "modskc",
                 groups: "clanless",
                 recurring: true
@@ -7199,7 +7210,7 @@
             }, {
                 id: "sunpeltsd",
                 name: "Sunpelt (SkC)",
-                image: "../thumbnails/SUNPELTSKC.png?v=2",
+                image: "../thumbnails/sunpeltskc.png?v=2",
                 series: "modskc",
                 groups: "skc",
                 recurring: true
@@ -7213,7 +7224,7 @@
             }, {
                 id: "tanglesd",
                 name: "Tangle",
-                image: "../thumbnails/TANGLE.png?v=2",
+                image: "../thumbnails/tangle.png?v=2",
                 series: "modskc",
                 groups: "skc",
                 recurring: true
@@ -7303,7 +7314,7 @@
                 recurring: true
             }, {
                 id: "nutmegsd",
-                name: "Nutmeg (RO)",
+                name: "Nutmeg (Ro)",
                 image: "../thumbnails/NUTMEGRO.png?v=2",
                 series: "modskc",
                 groups: "clanless",
@@ -7332,14 +7343,14 @@
             }, {
                 id: "redsd",
                 name: "Red (SD)",
-                image: "../thumbnails/RED.png?v=2",
+                image: "../thumbnails/redsd.png?v=2",
                 series: "modskc",
                 groups: "clanless",
                 recurring: true
             }, {
                 id: "shrewtoothsd",
                 name: "Shrewtooth",
-                image: "../thumbnails/SHREWTOOTH.png?v=2",
+                image: "../thumbnails/shrewtooth.png?v=2",
                 series: "modskc",
                 groups: "skc",
                 recurring: true
@@ -7448,7 +7459,7 @@
             }, {
                 id: "hollykittnp",
                 name: "Hollykit (TNP)",
-                image: "../thumbnails/HOLLYKIT.png?v=2",
+                image: "../thumbnails/hollykittnp.png?v=2",
                 series: "tnp",
                 groups: "tc",
                 recurring: true
@@ -7469,7 +7480,7 @@
             }, {
                 id: "rippletailtnp",
                 name: "Rippletail (RC)",
-                image: "../thumbnails/RIPPLETAIL.png?v=2",
+                image: "../thumbnails/rippletailrc.png?v=2",
                 series: "oots",
                 groups: "rc",
                 recurring: true
@@ -7482,8 +7493,8 @@
                 recurring: true
             }, {
                 id: "robinwingtnp",
-                name: "Robinwing (WC)",
-                image: "../thumbnails/ROBINWINGWC.png?v=2",
+                name: "Robinwing (WiC)",
+                image: "../thumbnails/robinwingwic.png?v=2",
                 series: "tnp",
                 groups: "wc",
                 recurring: true
@@ -7504,7 +7515,7 @@
             }, {
                 id: "owlwhiskertnp",
                 name: "Owlwhisker",
-                image: "../thumbnails/OWLWHISKER.png?v=2",
+                image: "../thumbnails/owlwhisker.png?v=2",
                 series: "pot",
                 groups: "wc",
                 recurring: true
@@ -7517,8 +7528,8 @@
                 recurring: true
             }, {
                 id: "oatwhiskertnp",
-                name: "Oatwhisker (WC)",
-                image: "../thumbnails/OATWHISKERWC.png?v=2",
+                name: "Oatwhisker (WiC)",
+                image: "../thumbnails/oatwhiskerwic.png?v=2",
                 series: "tnp",
                 groups: "wc",
                 recurring: true
@@ -7539,7 +7550,7 @@
             }, {
                 id: "shrewpawtnp",
                 name: "Shrewpaw (TC)",
-                image: "../thumbnails/SHREWPAW.png?v=2",
+                image: "../thumbnails/shrewpawtc.png?v=2",
                 series: "tnp",
                 groups: "tc",
                 recurring: true
@@ -7609,7 +7620,7 @@
             }, {
                 id: "squirrelstartnp",
                 name: "Squirrelstar",
-                image: "../thumbnails/SQUIRRELSTAR.png?v=2",
+                image: "../thumbnails/squirrelstar.png?v=2",
                 series: "tnp",
                 groups: "tc",
                 recurring: true
@@ -7665,7 +7676,7 @@
             }, {
                 id: "startnp",
                 name: "Star That Shines on Water",
-                image: "../thumbnails/STARTHATSHINESONWATER.png?v=2",
+                image: "../thumbnails/starthatshinesonwater.png?v=2",
                 series: "tnp",
                 groups: "other",
                 recurring: true
@@ -7679,7 +7690,7 @@
             }, {
                 id: "reedwhiskertnp",
                 name: "Reedwhisker",
-                image: "../thumbnails/REEDWHISKER.png?v=2",
+                image: "../thumbnails/reedwhisker.png?v=2",
                 series: "tnp",
                 groups: "rc",
                 recurring: true
@@ -7693,14 +7704,14 @@
             }, {
                 id: "splashpawtnp",
                 name: "Splashpaw (TNP)",
-                image: "../thumbnails/SPLASHPAW.png?v=2",
+                image: "../thumbnails/splashpawtnp.png?v=2",
                 series: "tnp",
                 groups: "rc",
                 recurring: true
             }, {
                 id: "rocktnp",
                 name: "Rock Beneath Still Water",
-                image: "../thumbnails/ROCKBENEATHSTILLWATER.png?v=2",
+                image: "../thumbnails/rockbeneathstillwater.png?v=2",
                 series: "tnp",
                 groups: "other",
                 recurring: true
@@ -7839,8 +7850,8 @@
                 recurring: true
             }, {
                 id: "rushtailtnp",
-                name: "Rushtail (WC)",
-                image: "../thumbnails/RUSHTAILWC.png?v=2",
+                name: "Rushtail (WiC)",
+                image: "../thumbnails/rushtailwic.png?v=2",
                 series: "tnp",
                 groups: "wc",
                 recurring: true
@@ -7860,8 +7871,8 @@
                 recurring: true
             }, {
                 id: "whitetailtnp",
-                name: "Whitetail (WC)",
-                image: "../thumbnails/WHITETAILWC.png?v=2",
+                name: "Whitetail (WiC)",
+                image: "../thumbnails/whitetailwic.png?v=2",
                 series: "tnp",
                 groups: "wc",
                 recurring: true
@@ -8100,7 +8111,7 @@
             }, {
                 id: "molepawtnp",
                 name: "Molepaw (TNP)",
-                image: "../thumbnails/MOLEPAW.png?v=2",
+                image: "../thumbnails/molepawtnp.png?v=2",
                 series: "pot",
                 groups: "tc",
                 recurring: true
@@ -8141,8 +8152,8 @@
                 recurring: true
             }, {
                 id: "rockpot",
-                name: "Rock (healer)",
-                image: "../thumbnails/ROCK.png?v=2",
+                name: "Rock (Healer)",
+                image: "../thumbnails/rockhealer.png?v=2",
                 series: "pot",
                 groups: "clanless",
                 recurring: true
@@ -8240,7 +8251,7 @@
             }, {
                 id: "splashpot",
                 name: "Splash When Fish Leaps",
-                image: "../thumbnails/SPLASHWHENFISHLEAPS.png?v=2",
+                image: "../thumbnails/splashwhenfishleaps.png?v=2",
                 series: "pot",
                 groups: "other",
                 recurring: true
@@ -8331,14 +8342,14 @@
             }, {
                 id: "mintfurpot",
                 name: "Mintfur (RC)",
-                image: "../thumbnails/MINTFURRC.png?v=2",
+                image: "../thumbnails/mintfurrc.png?v=2",
                 series: "pot",
                 groups: "rc",
                 recurring: true
             }, {
                 id: "nettlepawpot",
                 name: "Nettlepaw (RC)",
-                image: "../thumbnails/NETTLEPAW.png?v=2",
+                image: "../thumbnails/nettlepawrc.png?v=2",
                 series: "pot",
                 groups: "rc",
                 recurring: true
@@ -8366,7 +8377,7 @@
             }, {
                 id: "snaketailpot",
                 name: "Snaketail (PoT)",
-                image: "../thumbnails/SNAKETAIL.png?v=2",
+                image: "../thumbnails/snaketailpot.png?v=2",
                 series: "pot",
                 groups: "sc",
                 recurring: true
@@ -8527,7 +8538,7 @@
             }, {
                 id: "runningfoxpot",
                 name: "Running Fox",
-                image: "../thumbnails/RUNNINGFOX.png?v=2",
+                image: "../thumbnails/runningfox.png?v=2",
                 series: "pot",
                 groups: "other",
                 recurring: true
@@ -8555,7 +8566,7 @@
             }, {
                 id: "strongpouncepot",
                 name: "Strong Pounce",
-                image: "../thumbnails/STRONGPOUNCE.png?v=2",
+                image: "../thumbnails/strongpounce.png?v=2",
                 series: "pot",
                 groups: "other",
                 recurring: true
@@ -8582,8 +8593,8 @@
                 recurring: true
             }, {
                 id: "fritzpot",
-                name: "Fritz (PoT)",
-                image: "../thumbnails/FRITZPOT.png?v=2",
+                name: "Fritz (Lo)",
+                image: "../thumbnails/fritzlo.png?v=2",
                 series: "pot",
                 groups: "clanless",
                 recurring: true
@@ -8703,7 +8714,7 @@
             }, {
                 id: "sevilleoots",
                 name: "Seville",
-                image: "../thumbnails/SEVILLE.png?v=2",
+                image: "../thumbnails/seville.png?v=2",
                 series: "oots",
                 groups: "clanless",
                 recurring: true
@@ -8857,7 +8868,7 @@
             }, {
                 id: "scorchfuroots",
                 name: "Scorchfur",
-                image: "../thumbnails/SCORCHFUR.png?v=2",
+                image: "../thumbnails/scorchfur.png?v=2",
                 series: "avos",
                 groups: "sc",
                 recurring: true
@@ -8884,8 +8895,8 @@
                 recurring: true
             }, {
                 id: "swallowtailoots",
-                name: "Swallowtail (WC)",
-                image: "../thumbnails/SWALLOWTAILWC.png?v=2",
+                name: "Swallowtail (WiC)",
+                image: "../thumbnails/swallowtailwic.png?v=2",
                 series: "oots",
                 groups: "wc",
                 recurring: true
@@ -8913,7 +8924,7 @@
             }, {
                 id: "dewkitoots",
                 name: "Dewkit (ShC)",
-                image: "../thumbnails/DEWKIT.png?v=2",
+                image: "../thumbnails/dewkitshc.png?v=2",
                 series: "oots",
                 groups: "sc",
                 recurring: true
@@ -8927,7 +8938,7 @@
             }, {
                 id: "sparrowfeatheroots",
                 name: "Sparrowfeather (DF)",
-                image: "../thumbnails/SPARROWFEATHERDF.png?v=2",
+                image: "../thumbnails/sparrowfeatherdf.png?v=2",
                 series: "oots",
                 groups: "afterlives",
                 recurring: true
@@ -8997,7 +9008,7 @@
             }, {
                 id: "rushtailoots",
                 name: "Rushtail (RC)",
-                image: "../thumbnails/RUSHTAILRC.png?v=2",
+                image: "../thumbnails/rushtailwic.png?v=2",
                 series: "oots",
                 groups: "rc",
                 recurring: true
@@ -9172,21 +9183,21 @@
             }, {
                 id: "pouncetailoots",
                 name: "Pouncetail (ShC)",
-                image: "../thumbnails/POUNCETAILSHC.png?v=2",
+                image: "../thumbnails/pouncetailshc.png?v=2",
                 series: "oots",
                 groups: "sc",
                 recurring: true
             }, {
                 id: "shimmerpeltoots",
                 name: "Shimmerpelt (BrS)",
-                image: "../thumbnails/SHIMMERPELTBRS.png?v=2",
+                image: "../thumbnails/shimmerpeltbrs.png?v=2",
                 series: "oots",
                 groups: "rc",
                 recurring: true
             }, {
                 id: "stoatfuroots",
                 name: "Stoatfur (ShC)",
-                image: "../thumbnails/STOATFURSHC.png?v=2",
+                image: "../thumbnails/stoatfurshc.png?v=2",
                 series: "oots",
                 groups: "sc",
                 recurring: true
@@ -9286,7 +9297,7 @@
             }, {
                 id: "parsnipoots",
                 name: "Parsnip",
-                image: "../thumbnails/PARSNIP.png?v=2",
+                image: "../thumbnails/parsnip.png?v=2",
                 series: "oots",
                 groups: "clanless",
                 recurring: true
@@ -9300,7 +9311,7 @@
             }, {
                 id: "rigaoots",
                 name: "Riga",
-                image: "../thumbnails/RIGA.png?v=2",
+                image: "../thumbnails/riga.png?v=2",
                 series: "oots",
                 groups: "clanless",
                 recurring: true
@@ -9338,6 +9349,167 @@
                 image: "../thumbnails/ZIGGY.png?v=2",
                 series: "oots",
                 groups: "clanless",
+                recurring: true
+            }, // DARKTAIL'S JUDGEMENT
+            {
+                id: "wesleydj",
+                name: "Wesley",
+                image: "../thumbnails/wesley.png?v=2",
+                series: "avos",
+                groups: "clanless",
+                spoilers: true,
+                recurring: true
+            }, {
+                id: "meadowdj",
+                name: "Meadow",
+                image: "../thumbnails/meadow.png?v=2",
+                series: "avos",
+                groups: "clanless",
+                spoilers: true,
+                recurring: true
+            }, {
+                id: "abigaildj",
+                name: "Abigail",
+                image: "../thumbnails/abigail.png?v=2",
+                series: "avos",
+                groups: "clanless",
+                spoilers: true,
+                recurring: true
+            }, {
+                id: "moedj",
+                name: "Moe",
+                image: "../thumbnails/moe.png?v=2",
+                series: "avos",
+                groups: "clanless",
+                spoilers: true,
+                recurring: true
+            }, {
+                id: "stemdj",
+                name: "Stem",
+                image: "../thumbnails/stem.png?v=2",
+                series: "avos",
+                groups: "clanless",
+                spoilers: true,
+                recurring: true
+            }, {
+                id: "peonydj",
+                name: "Peony",
+                image: "../thumbnails/peony.png?v=2",
+                series: "avos",
+                groups: "clanless",
+                spoilers: true,
+                recurring: true
+            }, {
+                id: "dandeliondj",
+                name: "Dandelion (cat)",
+                image: "../thumbnails/dandelioncat.png?v=2",
+                series: "avos",
+                groups: "clanless",
+                spoilers: true,
+                recurring: true
+            }, {
+                id: "fuzzfacedj",
+                name: "Fuzzface",
+                image: "../thumbnails/fuzzface.png?v=2",
+                series: "avos",
+                groups: "clanless",
+                spoilers: true,
+                recurring: true
+            }, {
+                id: "hedgedj",
+                name: "Hedge",
+                image: "../thumbnails/hedge.png?v=2",
+                series: "avos",
+                groups: "clanless",
+                spoilers: true,
+                recurring: true
+            }, {
+                id: "marigolddj",
+                name: "Marigold (DJ)",
+                image: "../thumbnails/marigolddj.png?v=2",
+                series: "avos",
+                groups: "clanless",
+                spoilers: true,
+                recurring: true
+            }, {
+                id: "basildj",
+                name: "Basil",
+                image: "../thumbnails/basil.png?v=2",
+                series: "avos",
+                groups: "clanless",
+                spoilers: true,
+                recurring: true
+            }, {
+                id: "hedgedj",
+                name: "Hedge",
+                image: "../thumbnails/hedge.png?v=2",
+                series: "avos",
+                groups: "clanless",
+                spoilers: true,
+                recurring: true
+            }, {
+                id: "scratchdj",
+                name: "Scratch (DJ)",
+                image: "../thumbnails/scratchdj.png?v=2",
+                series: "avos",
+                groups: "other",
+                spoilers: true,
+                recurring: true
+            }, {
+                id: "weeddj",
+                name: "Weed",
+                image: "../thumbnails/weed.png?v=2",
+                series: "avos",
+                groups: "other",
+                spoilers: true,
+                recurring: true
+            }, {
+                id: "gulldj",
+                name: "Gull (cat)",
+                image: "../thumbnails/gullcat.png?v=2",
+                series: "avos",
+                groups: "other",
+                spoilers: true,
+                recurring: true
+            }, {
+                id: "foxdj",
+                name: "Fox (DJ)",
+                image: "../thumbnails/foxdj.png?v=2",
+                series: "avos",
+                groups: "other",
+                spoilers: true,
+                recurring: true
+            }, {
+                id: "snakedj",
+                name: "Snake (DJ)",
+                image: "../thumbnails/snakedj.png?v=2",
+                series: "avos",
+                groups: "other",
+                spoilers: true,
+                recurring: true
+            }, {
+                id: "gritdj",
+                name: "Grit",
+                image: "../thumbnails/grit.png?v=2",
+                series: "avos",
+                groups: "other",
+                spoilers: true,
+                recurring: true
+            }, {
+                id: "ferndj",
+                name: "Fern (DJ)",
+                image: "../thumbnails/ferndj.png?v=2",
+                series: "avos",
+                groups: "other",
+                spoilers: true,
+                recurring: true
+            }, {
+                id: "itchdj",
+                name: "Itch",
+                image: "../thumbnails/itch.png?v=2",
+                series: "avos",
+                groups: "other",
+                spoilers: true,
                 recurring: true
             }, // A VISION OF SHADOWS
             {
@@ -9413,7 +9585,7 @@
             }, {
                 id: "perchwingavos",
                 name: "Perchwing",
-                image: "../thumbnails/PERCHWING.png?v=2",
+                image: "../thumbnails/perchwing.png?v=2",
                 series: "avos",
                 groups: "rc",
                 recurring: true
@@ -9426,8 +9598,8 @@
                 recurring: true
             }, {
                 id: "ravenavos",
-                name: "Raven",
-                image: "../thumbnails/RAVEN.png?v=2",
+                name: "Raven (AVoS)",
+                image: "../thumbnails/ravenavos.png?v=2",
                 series: "avos",
                 groups: "other",
                 recurring: true
@@ -9679,7 +9851,7 @@
             }, {
                 id: "smokeavos",
                 name: "Smoke",
-                image: "../thumbnails/SMOKE.png?v=2",
+                image: "../thumbnails/smoke.png?v=2",
                 series: "preq",
                 groups: "clanless",
                 recurring: true
@@ -9847,7 +10019,7 @@
             }, {
                 id: "flowerstemavos",
                 name: "Flowerstem (AVoS)",
-                image: "../thumbnails/FLOWERSTEM.png?v=2",
+                image: "../thumbnails/flowerstemavos.png?v=2",
                 series: "avos",
                 groups: "sc",
                 recurring: true
@@ -9945,8 +10117,8 @@
                 recurring: true
             }, {
                 id: "nighthj",
-                name: "Night (HJ)",
-                image: "../thumbnails/NIGHTHJ.png?v=2",
+                name: "Night (Ro)",
+                image: "../thumbnails/nightro.png?v=2",
                 series: "modskc",
                 groups: "clanless",
                 recurring: true
@@ -9960,7 +10132,7 @@
             }, {
                 id: "rileypoolhj",
                 name: "Rileypool",
-                image: "../thumbnails/RILEYPOOL.png?v=2",
+                image: "../thumbnails/rileypool.png?v=2",
                 series: "modskc",
                 groups: "skc",
                 recurring: true
@@ -9974,7 +10146,7 @@
             }, {
                 id: "stonehj",
                 name: "Stone (HJ)",
-                image: "../thumbnails/STONEHJ.png?v=2",
+                image: "../thumbnails/stonehj.png?v=2",
                 series: "modskc",
                 groups: "clanless",
                 recurring: true
@@ -9994,9 +10166,9 @@
                 recurring: true
             }, {
                 id: "toadhj",
-                name: "Toad (HJ)",
-                image: "../thumbnails/TOAD.png?v=2",
-                series: "modskc",
+                name: "Toad (Ro)",
+                image: "../thumbnails/toadro.png?v=2",
+                series: "avos",
                 groups: "clanless",
                 recurring: true
             }, // PEBBLESHINES KITS
@@ -10059,8 +10231,8 @@
                 recurring: true
             }, {
                 id: "cobwebavos",
-                name: "Cobweb",
-                image: "../thumbnails/COBWEB.png?v=2",
+                name: "Cobweb (cat)",
+                image: "../thumbnails/cobwebcat.png?v=2",
                 series: "avos",
                 groups: "other",
                 recurring: true
@@ -10228,7 +10400,7 @@
             }, {
                 id: "podlightasc",
                 name: "Podlight",
-                image: "../thumbnails/PODLIGHT.png?v=2",
+                image: "../thumbnails/podlight.png?v=2",
                 series: "asc",
                 groups: "rc",
                 recurring: true
@@ -10398,7 +10570,7 @@
             }, {
                 id: "gravelnosetbc",
                 name: "Gravelnose",
-                image: "../thumbnails/GRAVELNOSE.png?v=2",
+                image: "../thumbnails/gravelnose.png?v=2",
                 series: "tbc",
                 groups: "skc",
                 recurring: true
@@ -10461,7 +10633,7 @@
             }, {
                 id: "nightskyavos",
                 name: "Nightsky (TBC)",
-                image: "../thumbnails/NIGHTSKY.png?v=2",
+                image: "../thumbnails/nightskytbc.png?v=2",
                 series: "avos",
                 groups: "other",
                 recurring: true
@@ -10538,7 +10710,7 @@
             }, {
                 id: "sunbeamasc",
                 name: "Sunbeam",
-                image: "../thumbnails/SUNBEAM.png?v=2",
+                image: "../thumbnails/sunbeam.png?v=2",
                 series: "asc",
                 groups: "tc",
                 recurring: true
@@ -10643,14 +10815,14 @@
             }, {
                 id: "songleaptbc",
                 name: "Songleap",
-                image: "../thumbnails/SONGLEAP.png?v=2",
+                image: "../thumbnails/songleap.png?v=2",
                 series: "tbc",
                 groups: "wc",
                 recurring: true
             }, {
                 id: "splashtailasc",
                 name: "Splashtail",
-                image: "../thumbnails/SPLASHTAIL.png?v=2",
+                image: "../thumbnails/splashtail.png?v=2",
                 series: "asc",
                 groups: "rc",
                 recurring: true
@@ -10754,7 +10926,7 @@
                 recurring: true
             }, {
                 id: "moontbc",
-                name: "Moon (SqH)",
+                name: "Moon (Sister)",
                 image: "../thumbnails/MOONSISTER.png?v=2",
                 series: "tbc",
                 groups: "other",
@@ -10797,7 +10969,7 @@
             }, {
                 id: "sunrisetbc",
                 name: "Sunrise (Sister)",
-                image: "../thumbnails/SUNRISE.png?v=2",
+                image: "../thumbnails/sunrisesister.png?v=2",
                 series: "tbc",
                 groups: "other",
                 recurring: true
@@ -10917,8 +11089,8 @@
                 recurring: true
             }, {
                 id: "jacktbc",
-                name: "Jack",
-                image: "../thumbnails/JACK.png?v=2",
+                name: "Jack (KP)",
+                image: "../thumbnails/jackkp.png?v=2",
                 series: "tbc",
                 groups: "clanless",
                 recurring: true
@@ -11053,7 +11225,7 @@
             }, {
                 id: "marigoldgv",
                 name: "Marigold (GV)",
-                image: "../thumbnails/MARIGOLDGV.png?v=2",
+                image: "../thumbnails/marigoldgv.png?v=2",
                 series: "tbc",
                 groups: "clanless",
                 recurring: true
@@ -11111,7 +11283,7 @@
             }, {
                 id: "stemtailasc",
                 name: "Stemtail",
-                image: "../thumbnails/STEMTAIL.png?v=2",
+                image: "../thumbnails/stemtail.png?v=2",
                 series: "asc",
                 groups: "tc",
                 recurring: true
@@ -11125,7 +11297,7 @@
             }, {
                 id: "rowankitasc",
                 name: "Rowankit (ASC)",
-                image: "../thumbnails/ROWANKIT.png?v=2",
+                image: "../thumbnails/rowankitasc.png?v=2",
                 series: "asc",
                 groups: "sc",
                 recurring: true
@@ -11174,14 +11346,14 @@
             }, {
                 id: "duskshineasc",
                 name: "Duskshine",
-                image: "../thumbnails/DUSKSHINE.png?v=2",
+                image: "../thumbnails/duskshine.png?v=2",
                 series: "asc",
                 groups: "skc",
                 recurring: true
             }, {
                 id: "stripeheartasc",
                 name: "Stripeheart",
-                image: "../thumbnails/STRIPEHEART.png?v=2",
+                image: "../thumbnails/stripeheart.png?v=2",
                 series: "asc",
                 groups: "wc",
                 recurring: true
@@ -11224,7 +11396,7 @@
             }, {
                 id: "marlowasc",
                 name: "Marlow",
-                image: "../thumbnails/MARLOW.png?v=2",
+                image: "../thumbnails/marlow.png?v=2",
                 series: "asc",
                 groups: "other",
                 recurring: true
@@ -11395,21 +11567,21 @@
             }, {
                 id: "pumpernickelasc",
                 name: "Pumpernickel",
-                image: "../thumbnails/PUMPERNICKEL.png?v=2",
+                image: "../thumbnails/pumpernickel.png?v=2",
                 series: "asc",
                 groups: "clanless",
                 recurring: true
             }, {
                 id: "purrrollasc",
                 name: "Purr Roll",
-                image: "../thumbnails/PURRROLL.png?v=2",
+                image: "../thumbnails/purrroll.png?v=2",
                 series: "asc",
                 groups: "other",
                 recurring: true
             }, {
                 id: "slateasc",
                 name: "Slate (IH)",
-                image: "../thumbnails/SLATEIH.png?v=2",
+                image: "../thumbnails/slateih.png?v=2",
                 series: "asc",
                 groups: "clanless",
                 recurring: true
@@ -11480,56 +11652,56 @@
             {
                 id: "beechpawcs",
                 name: "Beechpaw (ShC)",
-                image: "../thumbnails/BEECHPAWSHC.png?v=2",
+                image: "../thumbnails/beechpawshc.png?v=2",
                 series: "cs",
                 groups: "sc",
                 recurring: true
             }, {
-                id: "eelkitcs",
-                name: "Eelkit",
-                image: "../thumbnails/EELKIT.png?v=2",
+                id: "eelpawcs",
+                name: "Eelpaw",
+                image: "../thumbnails/eelpaw.png?v=2",
                 series: "cs",
                 groups: "rc",
                 recurring: true
             }, {
-                id: "goldenpawcs",
-                name: "Goldenpaw (CS)",
-                image: "../thumbnails/GOLDENPAW.png?v=2",
+                id: "goldenheartcs",
+                name: "Goldenheart",
+                image: "../thumbnails/goldenheart.png?v=2",
                 series: "cs",
                 groups: "tc",
                 recurring: true
             }, {
-                id: "hazelkitcs",
-                name: "Hazelkit (CS)",
-                image: "../thumbnails/HAZELKIT.png?v=2",
+                id: "hazelpawcs",
+                name: "Hazelpaw (CS)",
+                image: "../thumbnails/hazelpaw.png?v=2",
                 series: "cs",
                 groups: "tc",
                 recurring: true
             }, {
-                id: "heronkitcs",
-                name: "Heronkit (RC)",
-                image: "../thumbnails/HERONKIT.png?v=2",
+                id: "heronpawcs",
+                name: "Heronpaw (CS)",
+                image: "../thumbnails/heronpaw.png?v=2",
                 series: "cs",
                 groups: "rc",
                 recurring: true
             }, {
-                id: "moonpawcs",
-                name: "Moonpaw (CS)",
-                image: "../thumbnails/MOONPAW.png?v=2",
+                id: "moonglowcs",
+                name: "Moonglow",
+                image: "../thumbnails/moonglow.png?v=2",
                 series: "cs",
                 groups: "tc",
                 recurring: true
             }, {
-                id: "oakkitcs",
-                name: "Oakkit (TC)",
-                image: "../thumbnails/OAKKIT.png?v=2",
+                id: "oakpawcs",
+                name: "Oakpaw (TC)",
+                image: "../thumbnails/oakpaw.png?v=2",
                 series: "cs",
                 groups: "tc",
                 recurring: true
             }, {
                 id: "poolpawcs",
                 name: "Poolpaw",
-                image: "../thumbnails/POOLPAW.png?v=2",
+                image: "../thumbnails/poolpaw.png?v=2",
                 series: "cs",
                 groups: "sc",
                 recurring: true
@@ -11543,28 +11715,28 @@
             }, {
                 id: "redcloudcs",
                 name: "Redcloud",
-                image: "../thumbnails/REDCLOUD.png?v=2",
+                image: "../thumbnails/redcloud.png?v=2",
                 series: "cs",
                 groups: "sc",
                 recurring: true
             }, {
                 id: "robinpawcs",
-                name: "Robinpaw (CS)",
-                image: "../thumbnails/ROBINPAW.png?v=2",
+                name: "Robinpaw (SkC)",
+                image: "../thumbnails/robinpawskc.png?v=2",
                 series: "cs",
                 groups: "skc",
                 recurring: true
             }, {
-                id: "rustlekitcs",
-                name: "Rustlekit",
-                image: "../thumbnails/RUSTLEKIT.png?v=2",
+                id: "rustlepawcs",
+                name: "Rustlepaw",
+                image: "../thumbnails/rustlepaw.png?v=2",
                 series: "cs",
                 groups: "wc",
                 recurring: true
             }, {
-                id: "shinepawcs",
-                name: "Shinepaw",
-                image: "../thumbnails/SHINEPAW.png?v=2",
+                id: "shinepoolcs",
+                name: "Shinepool",
+                image: "../thumbnails/shinepool.png?v=2",
                 series: "cs",
                 groups: "tc",
                 recurring: true
@@ -11583,45 +11755,52 @@
                 groups: "sc",
                 recurring: true
             }, {
-                id: "starlingpawcs",
-                name: "Starlingpaw (SkC)",
-                image: "../thumbnails/STARLINGFLIGHT.png?v=2",
+                id: "starlingflightcs",
+                name: "Starlingflight",
+                image: "../thumbnails/starlingflight.png?v=2",
                 series: "cs",
                 groups: "skc",
                 recurring: true
             }, {
-                id: "stretchkitcs",
-                name: "Stretchkit",
-                image: "../thumbnails/STRETCHKIT.png?v=2",
+                id: "stretchpawcs",
+                name: "Stretchpaw",
+                image: "../thumbnails/stretchpaw.png?v=2",
                 series: "cs",
                 groups: "wc",
                 recurring: true
             }, {
-                id: "sunkitcs",
-                name: "Sunkit (CS)",
-                image: "../thumbnails/SUNKIT.png?v=2",
+                id: "sunpawcs",
+                name: "Sunpaw (TC)",
+                image: "../thumbnails/sunpawtc.png?v=2",
                 series: "cs",
                 groups: "tc",
                 recurring: true
             }, {
-                id: "morningkitcs",
-                name: "Morningkit (TC)",
-                image: "../thumbnails/MORNINGKITTC.png?v=2",
+                id: "brightmorningcs",
+                name: "Brightmorning",
+                image: "../thumbnails/brightmorning.png?v=2",
                 series: "cs",
                 groups: "tc",
                 recurring: true
-            }, // EXTRA (1)
+            }, // EXTRA
             {
-                id: "shinecloudpc",
-                name: "Shinecloud",
-                image: "../thumbnails/SHINECLOUD.png?v=2",
-                series: "preq",
-                groups: "tc",
+                id: "easteregg",
+                name: "Cloudsnap",
+                image: "../thumbnails/cloudsnap.png?v=2",
+                series: "oots",
+                groups: "rc",
+                recurring: true
+            }, {
+                id: "winstontnp",
+                name: "Winston",
+                image: "../thumbnails/winston.png?v=2",
+                series: "tnp",
+                groups: "clanless",
                 recurring: true
             }, {
                 id: "drizzlepawtnp",
-                name: "Waterkit",
-                image: "../thumbnails/WATERKIT.png?v=2",
+                name: "Drizzlepaw",
+                image: "../thumbnails/drizzlepaw.png?v=2",
                 series: "tnp",
                 groups: "wc",
                 recurring: true
@@ -11681,6 +11860,20 @@
                 series: "tpb",
                 groups: "rc",
                 recurring: true
+            }, {
+                id: "petalandfoxsmotherdotc",
+                name: "Petal and Fox's Mother",
+                image: "../thumbnails/petalandfoxsmother.png?v=2",
+                series: "dotc",
+                groups: "clanless",
+                recurring: true
+            }, {
+                id: "leafstarsmothersd",
+                name: "Leafstar's Mother",
+                image: "../thumbnails/leafstarsmother.png?v=2",
+                series: "modskc",
+                groups: "clanless",
+                recurring: true
             }, // CS #2 | HIDDEN MOON
             {
                 id: "puffkitcs",
@@ -11706,14 +11899,14 @@
             }, {
                 id: "rainrunningoverrockscs",
                 name: "Rain Running Over Rocks",
-                image: "../thumbnails/RAINRUNNINGOVERROCKS.png?v=2",
+                image: "../thumbnails/rainrunningoverrocks.png?v=2",
                 series: "cs",
                 groups: "other",
                 recurring: true
             }, // CS #3 | CHASING SHADOWS
             {
                 id: "conekitcs",
-                name: "Conekit",
+                name: "Conekit (SkC)",
                 image: "../thumbnails/CONEKIT.png?v=2",
                 series: "cs",
                 groups: "skc",
@@ -11732,6 +11925,125 @@
                 series: "cs",
                 groups: "clanless",
                 recurring: true
+            }, // CS #4 | GUIDING LIGHT
+            {
+                id: "darkpawcs",
+                name: "Darkpaw (WaC)",
+                image: "../thumbnails/darkpaw.png?v=2",
+                series: "cs",
+                groups: "other",
+                recurring: true
+            }, {
+                id: "rustpawcs",
+                name: "Rustpaw",
+                image: "../thumbnails/rustpaw.png?v=2",
+                series: "cs",
+                groups: "other",
+                recurring: true
+            }, {
+                id: "pricklepawcs",
+                name: "Pricklepaw",
+                image: "../thumbnails/pricklepaw.png?v=2",
+                series: "cs",
+                groups: "other",
+                recurring: true
+            }, {
+                id: "gooseberrycs",
+                name: "Gooseberry (Lo)",
+                image: "../thumbnails/gooseberrylo.png?v=2",
+                series: "cs",
+                groups: "clanless",
+                recurring: true
+            }, {
+                id: "fleacs",
+                name: "Flea",
+                image: "../thumbnails/flea.png?v=2",
+                series: "cs",
+                groups: "clanless",
+                recurring: true
+            }, {
+                id: "bottlecs",
+                name: "Bottle",
+                image: "../thumbnails/bottle.png?v=2",
+                series: "cs",
+                groups: "clanless",
+                recurring: true
+            }, {
+                id: "foamcs",
+                name: "Foam",
+                image: "../thumbnails/foam.png?v=2",
+                series: "cs",
+                groups: "clanless",
+                recurring: true
+            }, {
+                id: "dolorescs",
+                name: "Dolores",
+                image: "../thumbnails/dolores.png?v=2",
+                series: "cs",
+                groups: "clanless",
+                recurring: true
+            }, {
+                id: "fridacs",
+                name: "Frida",
+                image: "../thumbnails/frida.png?v=2",
+                series: "cs",
+                groups: "clanless",
+                recurring: true
+            }, {
+                id: "georgecs",
+                name: "George",
+                image: "../thumbnails/george.png?v=2",
+                series: "cs",
+                groups: "clanless",
+                recurring: true
+            }, {
+                id: "hankcs",
+                name: "Hank",
+                image: "../thumbnails/hank.png?v=2",
+                series: "cs",
+                groups: "clanless",
+                spoilers: "true",
+                recurring: true
+            }, {
+                id: "jackcs",
+                name: "Jack (Lo)",
+                image: "../thumbnails/jacklo.png?v=2",
+                series: "cs",
+                groups: "clanless",
+                spoilers: "true",
+                recurring: true
+            }, {
+                id: "pearlcs",
+                name: "Pearl",
+                image: "../thumbnails/pearl.png?v=2",
+                series: "cs",
+                groups: "clanless",
+                spoilers: "true",
+                recurring: true
+            }, {
+                id: "penelopecs",
+                name: "Penelope",
+                image: "../thumbnails/penelope.png?v=2",
+                series: "cs",
+                groups: "clanless",
+                spoilers: "true",
+                recurring: true
+            }, {
+                id: "foamcs",
+                name: "Foam",
+                image: "../thumbnails/foam.png?v=2",
+                series: "cs",
+                groups: "clanless",
+                spoilers: "true",
+                recurring: true
+            }, {
+                id: "pinkycs",
+                name: "Pinky",
+                image: "../thumbnails/pinky.png?v=2",
+                series: "cs",
+                groups: "clanless",
+                spoilers: "true",
+                recurring: true
             }];
         var myPicker = new picker.Picker({
             items: items,
@@ -11739,7 +12051,7 @@
             defaultSettings: {
                 series: ['dotc', 'preq', 'tpb', 'tnp', 'pot', 'oots', 'avos', 'tbc', 'asc', 'cs', 'fg', 'modskc'],
                 groups: ['tc', 'sc', 'rc', 'wc', 'skc', 'clanless', 'other', 'afterlives', 'ancient'],
-                spoilers: true,
+                spoilers: ['true'],
                 recurringOnly: true
             },
             shouldIncludeItem: function (item, settings) {
@@ -11748,7 +12060,7 @@
                 // 2. the character's affiliation is one we have checked,
                 // 3. we are including spoilers, or this character is not marked as spoilers,
                 // 4. we haven't checked the "recurring only" box, or the character is a recurring character.
-                return settings.series.indexOf(item.series) !== -1 && settings.groups.indexOf(item.groups) !== -1 && (settings.spoilers || !item.spoilers) && (!settings.recurringOnly || item.recurring);
+                return settings.series.indexOf(item.series) !== -1 && settings.groups.indexOf(item.groups) !== -1 && settings.spoilers.indexOf(item.spoilers) && (!settings.recurringOnly || item.recurring);
             }
         });
 
@@ -11765,7 +12077,7 @@
                     maxBatchSize: '#max-batch-size',
                     groups: '.groups',
                     series: '.series',
-                    spoilers: '#spoilers',
+                    series: '.spoilers',
                     recurringOnly: '#recurring-only'
                 }
             },
@@ -11884,5 +12196,4 @@
     </script>
     </div>
 </body>
-
 </html>
