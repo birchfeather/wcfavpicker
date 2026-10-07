@@ -32,7 +32,7 @@
             width: 1300px;
             font-size: 12px;
             padding: 40px 40px;
-            margin-top: 100px;
+            margin-top: 90px;
             margin-bottom: 100px;
         }
 
@@ -621,7 +621,6 @@
         }
     </style>
 </head>
-
 <body>
 
     <!-- THEME TOGGLE -->
@@ -675,11 +674,8 @@
             Original source & sidebar code by <a href="https://github.com/antialiasis/favorite-picker">antialiasis</a> as well as being
             inspired by the older Warriors favourite picker created by <a href="https://x.com/memorydata">memorydata</a>!
         </p>
-
         <p>
-
         <div id="container">
-
             <div id="picking">
                 <ul id="evaluating" class="item-list">
                 </ul>
@@ -878,7 +874,6 @@
     <script src="https://cdn.jsdelivr.net/npm/sortablejs@1.7.0/Sortable.min.js"></script>
     <script>
         'use strict';
-
         var items = [// DAWN OF THE CLANS
             {
                 id: "clearskydotc",
@@ -11666,6 +11661,7 @@
                 image: "../thumbnails/eelpaw.png?v=2",
                 series: "cs",
                 groups: "rc",
+                spoilers: true,
                 recurring: true
             }, {
                 id: "goldenheartcs",
@@ -11673,6 +11669,7 @@
                 image: "../thumbnails/goldenheart.png?v=2",
                 series: "cs",
                 groups: "tc",
+                spoilers: true,
                 recurring: true
             }, {
                 id: "hazelpawcs",
@@ -11680,6 +11677,7 @@
                 image: "../thumbnails/hazelpaw.png?v=2",
                 series: "cs",
                 groups: "tc",
+                spoilers: true,
                 recurring: true
             }, {
                 id: "heronpawcs",
@@ -11687,6 +11685,7 @@
                 image: "../thumbnails/heronpaw.png?v=2",
                 series: "cs",
                 groups: "rc",
+                spoilers: true,
                 recurring: true
             }, {
                 id: "moonglowcs",
@@ -11694,6 +11693,7 @@
                 image: "../thumbnails/moonglow.png?v=2",
                 series: "cs",
                 groups: "tc",
+                spoilers: true,
                 recurring: true
             }, {
                 id: "oakpawcs",
@@ -11701,6 +11701,7 @@
                 image: "../thumbnails/oakpaw.png?v=2",
                 series: "cs",
                 groups: "tc",
+                spoilers: true,
                 recurring: true
             }, {
                 id: "poolpawcs",
@@ -11736,6 +11737,7 @@
                 image: "../thumbnails/rustlepaw.png?v=2",
                 series: "cs",
                 groups: "wc",
+                spoilers: true,
                 recurring: true
             }, {
                 id: "shinepoolcs",
@@ -11743,6 +11745,7 @@
                 image: "../thumbnails/shinepool.png?v=2",
                 series: "cs",
                 groups: "tc",
+                spoilers: true,
                 recurring: true
             }, {
                 id: "silkypodcs",
@@ -11764,6 +11767,7 @@
                 image: "../thumbnails/starlingflight.png?v=2",
                 series: "cs",
                 groups: "skc",
+                spoilers: true,
                 recurring: true
             }, {
                 id: "stretchpawcs",
@@ -11771,6 +11775,7 @@
                 image: "../thumbnails/stretchpaw.png?v=2",
                 series: "cs",
                 groups: "wc",
+                spoilers: true,
                 recurring: true
             }, {
                 id: "sunpawcs",
@@ -11778,6 +11783,7 @@
                 image: "../thumbnails/sunpawtc.png?v=2",
                 series: "cs",
                 groups: "tc",
+                spoilers: true,
                 recurring: true
             }, {
                 id: "brightmorningcs",
@@ -11785,6 +11791,7 @@
                 image: "../thumbnails/brightmorning.png?v=2",
                 series: "cs",
                 groups: "tc",
+                spoilers: true,
                 recurring: true
             }, // EXTRA
             {
@@ -11936,6 +11943,7 @@
                 image: "../thumbnails/darkpawwac.png?v=2",
                 series: "cs",
                 groups: "other",
+                spoilers: true,
                 recurring: true
             }, {
                 id: "rustpawcs",
@@ -11943,6 +11951,7 @@
                 image: "../thumbnails/rustpaw.png?v=2",
                 series: "cs",
                 groups: "other",
+                spoilers: true,
                 recurring: true
             }, {
                 id: "pricklepawcs",
@@ -11950,6 +11959,7 @@
                 image: "../thumbnails/pricklepaw.png?v=2",
                 series: "cs",
                 groups: "other",
+                spoilers: true,
                 recurring: true
             }, {
                 id: "gooseberrycs",
@@ -11957,6 +11967,7 @@
                 image: "../thumbnails/gooseberrylo.png?v=2",
                 series: "cs",
                 groups: "clanless",
+                spoilers: true,
                 recurring: true
             }, {
                 id: "fleacs",
@@ -11964,6 +11975,7 @@
                 image: "../thumbnails/flea.png?v=2",
                 series: "cs",
                 groups: "clanless",
+                spoilers: true,
                 recurring: true
             }, {
                 id: "bottlecs",
@@ -11971,6 +11983,7 @@
                 image: "../thumbnails/bottle.png?v=2",
                 series: "cs",
                 groups: "clanless",
+                spoilers: true,
                 recurring: true
             }, {
                 id: "foamcs",
@@ -11978,6 +11991,7 @@
                 image: "../thumbnails/foam.png?v=2",
                 series: "cs",
                 groups: "clanless",
+                spoilers: true,
                 recurring: true
             }, {
                 id: "dolorescs",
@@ -11985,6 +11999,7 @@
                 image: "../thumbnails/dolores.png?v=2",
                 series: "cs",
                 groups: "clanless",
+                spoilers: true,
                 recurring: true
             }, {
                 id: "fridacs",
@@ -11992,6 +12007,7 @@
                 image: "../thumbnails/frida.png?v=2",
                 series: "cs",
                 groups: "clanless",
+                spoilers: true,
                 recurring: true
             }, {
                 id: "georgecs",
@@ -11999,6 +12015,7 @@
                 image: "../thumbnails/george.png?v=2",
                 series: "cs",
                 groups: "clanless",
+                spoilers: true,
                 recurring: true
             }, {
                 id: "hankcs",
@@ -12006,6 +12023,7 @@
                 image: "../thumbnails/hank.png?v=2",
                 series: "cs",
                 groups: "clanless",
+                spoilers: true,
                 recurring: true
             }, {
                 id: "jackcs",
@@ -12013,6 +12031,7 @@
                 image: "../thumbnails/jacklo.png?v=2",
                 series: "cs",
                 groups: "clanless",
+                spoilers: true,
                 recurring: true
             }, {
                 id: "pearlcs",
@@ -12020,6 +12039,7 @@
                 image: "../thumbnails/pearl.png?v=2",
                 series: "cs",
                 groups: "clanless",
+                spoilers: true,
                 recurring: true
             }, {
                 id: "penelopecs",
@@ -12027,6 +12047,7 @@
                 image: "../thumbnails/penelope.png?v=2",
                 series: "cs",
                 groups: "clanless",
+                spoilers: true,
                 recurring: true
             }, {
                 id: "foamcs",
@@ -12034,6 +12055,7 @@
                 image: "../thumbnails/foam.png?v=2",
                 series: "cs",
                 groups: "clanless",
+                spoilers: true,
                 recurring: true
             }, {
                 id: "pinkycs",
@@ -12041,6 +12063,7 @@
                 image: "../thumbnails/pinky.png?v=2",
                 series: "cs",
                 groups: "clanless",
+                spoilers: true,
                 recurring: true
             }];
         var myPicker = new picker.Picker({
