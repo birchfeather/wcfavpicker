@@ -25,9 +25,12 @@
             --accent-color: #465fd0;
         }
 
+        head {
+            background: var(--base-color);
+        }
+
         #box {
             background-color: var(--base-color);
-            border-radius: 20px;
             width: 1300px;
             font-size: 12px;
             padding: 40px 40px;
@@ -314,6 +317,16 @@
             cursor: move;
         }
 
+        #favorites {
+            padding: 0;
+        }
+
+        #found-favorites {
+            width: fit-content;
+            justify-content: center;
+            align-items: center;
+        }
+
         #evaluating,
         #buttons {
             text-align: center;
@@ -388,11 +401,15 @@
         }
 
         body.darkmode {
-            background-color: var(--base-variant);
+            background-color: var(--base-color);
             --base-color: #121212;
             --base-variant: #2C2C2C;
             --text-color: #e0e0e0;
             --accent-color: #995ae5;
+
+            head {
+            background: var(--base-color);
+            }
 
             #themetoggle {
                 position: fixed;
@@ -488,9 +505,6 @@
             }
         }
     </style>
-</head>
-<body>
-
     <!-- THEME TOGGLE -->
     <button id="themetoggle">
         <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 640 640">
@@ -503,7 +517,6 @@
         </svg>
     </button>
     <!-- THEME TOGGLE END -->
-
     <div id="box">
 
         <div style="font-weight: 600; font-size: 32px; padding-bottom: 16px;"><i class="fa-solid fa-cat"></i> Warrior
@@ -534,7 +547,7 @@
             <a href="https://cloudtail.tumblr.com/">Ursiday,</a>
             <a href="https://warriorsproject.tumblr.com/">NiftySenpai,</a>
             <a href="https://lemnnshark.tumblr.com/">lemnnshark,</a>
-            <a href="https://sky-scratchdesigns.tumblr.com/">Sky-Scratch,</a>
+            <a href="https://sky-scratchdesigns.tumblr.com/">sky-scratch,</a>
             <a href="https://velo-cats.tumblr.com/">Velociras</a> &
             <a href="https://eggfeather.tumblr.com/">esoteric-terror</a>!
         </p>
@@ -1096,7 +1109,7 @@
             }, {
                 id: "pebbleheartdotc",
                 name: "Pebble Heart",
-                image: "../thumbnails/PEBBLEHEART.png?v=2",
+                image: "../thumbnails/pebbleheart.png?v=2",
                 series: "dotc",
                 groups: "sc",
                 recurring: true
@@ -7894,7 +7907,7 @@
             }, {
                 id: "breezepeltpot",
                 name: "Breezepelt",
-                image: "../thumbnails/BREEZEPELT.png?v=2",
+                image: "../thumbnails/breezepelt.png?v=2",
                 series: "pot",
                 groups: "wc",
                 recurring: true
@@ -7936,7 +7949,7 @@
             }, {
                 id: "minnowtailpot",
                 name: "Minnowtail",
-                image: "../thumbnails/MINNOWTAIL.png?v=2",
+                image: "../thumbnails/minnowtail.png?v=2",
                 series: "pot",
                 groups: "rc",
                 recurring: true
@@ -8623,7 +8636,7 @@
             }, {
                 id: "briarlightoots",
                 name: "Briarlight",
-                image: "../thumbnails/BRIARLIGHT.png?v=2",
+                image: "../thumbnails/briarlight.png?v=2",
                 series: "oots",
                 groups: "tc",
                 recurring: true
@@ -9591,7 +9604,7 @@
             }, {
                 id: "sleekwhiskeravos",
                 name: "Sleekwhisker",
-                image: "../thumbnails/SLEEKWHISKER.png?v=2",
+                image: "../thumbnails/sleekwhisker.png?v=2",
                 series: "avos",
                 groups: "other",
                 recurring: true
@@ -9626,7 +9639,7 @@
             }, {
                 id: "yarrowleafavos",
                 name: "Yarrowleaf",
-                image: "../thumbnails/YARROWLEAF.png?v=2",
+                image: "../thumbnails/yarrowleaf.png?v=2",
                 series: "avos",
                 groups: "sc",
                 recurring: true
@@ -9640,7 +9653,7 @@
             }, {
                 id: "hawkwingavos",
                 name: "Hawkwing",
-                image: "../thumbnails/HAWKWING.png?v=2",
+                image: "../thumbnails/hawkwing.png?v=2",
                 series: "modskc",
                 groups: "skc",
                 recurring: true
@@ -10359,7 +10372,7 @@
             }, {
                 id: "blazefireavos",
                 name: "Blazefire",
-                image: "../thumbnails/BLAZEFIRE.png?v=2",
+                image: "../thumbnails/blazefire.png?v=2",
                 series: "avos",
                 groups: "sc",
                 recurring: true
@@ -12069,5 +12082,4 @@
     </script>
     </div>
 </body>
-
 </html>
